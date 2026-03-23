@@ -68,7 +68,7 @@ jobs:
 
       - name: Block reserved registry namespaces
         env:
-          RESERVED_NAMESPACES: "@shadcn,@ui,@blocks,@components,@block,@component,@util,@utils,@registry,@lib,@hook,@hooks,@theme,@themes,@chart,@charts"
+          RESERVED_NAMESPACES: "@reignlabs,@ui,@blocks,@components,@block,@component,@util,@utils,@registry,@lib,@hook,@hooks,@theme,@themes,@chart,@charts"
         run: |
           node <<'EOF'
           const fs = require("node:fs")

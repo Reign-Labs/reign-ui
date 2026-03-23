@@ -1,4 +1,4 @@
-import { type registryItemSchema } from "shadcn/schema"
+import { type registryItemSchema } from "reignlabs-ui/schema"
 import { type z } from "zod"
 
 export const BASES: z.infer<typeof registryItemSchema>[] = [

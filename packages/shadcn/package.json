@@ -1,5 +1,5 @@
 {
-  "name": "shadcn",
+  "name": "reignlabs-ui",
   "version": "4.1.0",
   "description": "Add components to your apps.",
   "publishConfig": {
@@ -7,12 +7,12 @@
   },
   "license": "MIT",
   "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
+    "name": "Reign Labs",
+    "url": "https://twitter.com/reignlabs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shadcn-ui/ui.git",
+    "url": "https://github.com/reign-labs/reignlabs-ui.git",
     "directory": "packages/shadcn"
   },
   "files": [
@@ -23,7 +23,7 @@
     "ui",
     "tailwind",
     "radix-ui",
-    "shadcn"
+    "reignlabs-ui"
   ],
   "type": "module",
   "exports": {
@@ -66,7 +66,7 @@
     "typecheck": "tsc --noEmit",
     "clean": "rimraf dist && rimraf components",
     "start:dev": "cross-env REGISTRY_URL=http://localhost:4000/r SHADCN_TEMPLATE_DIR=../../templates node dist/index.js",
-    "start:prod": "cross-env REGISTRY_URL=https://ui.shadcn.com/r node dist/index.js",
+    "start:prod": "cross-env REGISTRY_URL=https://ui.reign-labs.com/r node dist/index.js",
     "start": "node dist/index.js",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",

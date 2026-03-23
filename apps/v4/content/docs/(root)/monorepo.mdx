@@ -1,14 +1,14 @@
 ---
 title: Monorepo
-description: Using shadcn/ui components and CLI in a monorepo.
+description: Using Reign Labs UI components and CLI in a monorepo.
 ---
 
-Until now, using shadcn/ui in a monorepo was a bit of a pain. You could add
+Until now, using Reign Labs UI in a monorepo was a bit of a pain. You could add
 components using the CLI, but you had to manage where the components
 were installed and manually fix import paths.
 
 With the new monorepo support in the CLI, we've made it a lot easier to use
-shadcn/ui in a monorepo.
+Reign Labs UI in a monorepo.
 
 The CLI now understands the monorepo structure and will install the components,
 dependencies and registry dependencies to the correct paths and handle imports
@@ -23,7 +23,7 @@ for you.
 To create a new monorepo project, run the `init` command with the `--monorepo` flag.
 
 ```bash
-npx shadcn@latest init --monorepo
+npx reignlabs-ui@latest init --monorepo
 ```
 
 Then select the template you want to use.
@@ -51,15 +51,15 @@ cd apps/web
 ```
 
 ```bash
-npx shadcn@latest add [COMPONENT]
+npx reignlabs-ui@latest add [COMPONENT]
 ```
 
 The CLI will figure out what type of component you are adding and install the
 correct files to the correct path.
 
-For example, if you run `npx shadcn@latest add button`, the CLI will install the button component under `packages/ui` and update the import path for components in `apps/web`.
+For example, if you run `npx reignlabs-ui@latest add button`, the CLI will install the button component under `packages/ui` and update the import path for components in `apps/web`.
 
-If you run `npx shadcn@latest add login-01`, the CLI will install the `button`, `label`, `input` and `card` components under `packages/ui` and the `login-form` component under `apps/web/components`.
+If you run `npx reignlabs-ui@latest add login-01`, the CLI will install the `button`, `label`, `input` and `card` components under `packages/ui` and the `login-form` component under `apps/web/components`.
 
 ### Importing components
 
@@ -115,7 +115,7 @@ turbo.json
 
 ```json showLineNumbers title="apps/web/components.json"
 {
-  "$schema": "https://ui.shadcn.com/schema.json",
+  "$schema": "https://ui.reign-labs.com/schema.json",
   "style": "radix-nova",
   "rsc": true,
   "tsx": true,
@@ -138,7 +138,7 @@ turbo.json
 
 ```json showLineNumbers title="packages/ui/components.json"
 {
-  "$schema": "https://ui.shadcn.com/schema.json",
+  "$schema": "https://ui.reign-labs.com/schema.json",
   "style": "radix-nova",
   "rsc": true,
   "tsx": true,

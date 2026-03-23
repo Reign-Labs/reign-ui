@@ -14,7 +14,7 @@ import {
 
 import { Icons } from "@/components/icons"
 
-const STORAGE_KEY = "shadcn-create-welcome-dialog"
+const STORAGE_KEY = "reignlabs-create-welcome-dialog"
 
 export function WelcomeDialog() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -47,7 +47,7 @@ export function WelcomeDialog() {
         </div>
         <DialogHeader className="gap-1 p-4">
           <DialogTitle className="text-left text-base">
-            Build your own shadcn/ui
+            Build your own Reign Labs UI
           </DialogTitle>
           <DialogDescription className="text-left leading-relaxed text-foreground">
             Customize everything from the ground up. Pick your component

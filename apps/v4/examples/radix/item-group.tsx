@@ -15,9 +15,9 @@ import { PlusIcon } from "lucide-react"
 
 const people = [
   {
-    username: "shadcn",
-    avatar: "https://github.com/shadcn.png",
-    email: "shadcn@vercel.com",
+    username: "Reign Labs",
+    avatar: "https://github.com/reignlabs.png",
+    email: "reignlabs@vercel.com",
   },
   {
     username: "maxleiter",

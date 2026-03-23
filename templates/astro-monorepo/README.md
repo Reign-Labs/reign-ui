@@ -1,18 +1,18 @@
-# Astro + React + TypeScript + shadcn/ui (Monorepo)
+# Astro + React + TypeScript + Reign Labs UI (Monorepo)
 
-This is a monorepo template for Astro with React, TypeScript, and shadcn/ui.
+This is a monorepo template for Astro with React, TypeScript, and Reign Labs UI.
 
 ## Structure
 
 - `apps/web` - Astro application
-- `packages/ui` - Shared UI components (shadcn/ui)
+- `packages/ui` - Shared UI components (Reign Labs UI)
 
 ## Adding components
 
 To add components, run the following command from the root:
 
 ```bash
-npx shadcn@latest add button -c apps/web
+npx reignlabs-ui@latest add button -c apps/web
 ```
 
 ## Using components

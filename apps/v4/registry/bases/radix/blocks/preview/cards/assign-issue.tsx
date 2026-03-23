@@ -37,7 +37,7 @@ import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 // Users available for assignment.
 const users = [
-  "shadcn",
+  "reignlabs",
   "maxleiter",
   "evilrabbit",
   "pranathip",

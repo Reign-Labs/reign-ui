@@ -21,9 +21,9 @@ import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
+    name: "Reign Labs",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatars/reignlabs.jpg",
   },
   calendars: [
     {

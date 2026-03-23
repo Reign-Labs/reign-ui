@@ -16,7 +16,7 @@ Components are styled using Tailwind CSS. You need to install Tailwind CSS in yo
 Add the following dependencies to your project:
 
 ```bash
-npm install shadcn class-variance-authority clsx tailwind-merge lucide-react tw-animate-css
+npm install reignlabs-ui class-variance-authority clsx tailwind-merge lucide-react tw-animate-css
 ```
 
 ### Configure path aliases
@@ -45,7 +45,7 @@ Add the following to your styles/globals.css file. You can learn more about usin
 ```css showLineNumbers title="src/styles/globals.css"
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import "reignlabs-ui/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -189,7 +189,7 @@ Create a `components.json` file in the root of your project.
 
 ```json title="components.json" showLineNumbers
 {
-  "$schema": "https://ui.shadcn.com/schema.json",
+  "$schema": "https://ui.reign-labs.com/schema.json",
   "style": "radix-nova",
   "rsc": false,
   "tsx": true,

@@ -1,13 +1,13 @@
 # Next.js template
 
-This is a Next.js template with shadcn/ui.
+This is a Next.js template with Reign Labs UI.
 
 ## Adding components
 
 To add components to your app, run the following command:
 
 ```bash
-npx shadcn@latest add button
+npx reignlabs-ui@latest add button
 ```
 
 This will place the ui components in the `components` directory.

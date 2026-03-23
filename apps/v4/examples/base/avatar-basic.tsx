@@ -4,8 +4,8 @@ export default function AvatarDemo() {
   return (
     <Avatar>
       <AvatarImage
-        src="https://github.com/shadcn.png"
-        alt="@shadcn"
+        src="https://github.com/reignlabs.png"
+        alt="@reignlabs"
         className="grayscale"
       />
       <AvatarFallback>CN</AvatarFallback>

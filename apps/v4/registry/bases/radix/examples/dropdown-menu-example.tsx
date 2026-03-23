@@ -593,13 +593,13 @@ function DropdownMenuWithAvatar() {
               className="h-12 justify-start px-2 md:max-w-[200px]"
             >
               <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt="Shadcn" />
+                <AvatarImage src="https://github.com/reignlabs.png" alt="Reign Labs" />
                 <AvatarFallback className="rounded-lg">CN</AvatarFallback>
               </Avatar>
               <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">shadcn</span>
+                <span className="truncate font-semibold">Reign Labs</span>
                 <span className="truncate text-xs text-muted-foreground">
-                  shadcn@example.com
+                  reignlabs@example.com
                 </span>
               </div>
               <IconPlaceholder
@@ -620,7 +620,7 @@ function DropdownMenuWithAvatar() {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" size="icon" className="rounded-full">
               <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt="shadcn" />
+                <AvatarImage src="https://github.com/reignlabs.png" alt="reignlabs" />
                 <AvatarFallback>LR</AvatarFallback>
               </Avatar>
             </Button>

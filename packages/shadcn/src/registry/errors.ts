@@ -274,7 +274,7 @@ export class RegistryMissingEnvironmentVariablesError extends RegistryError {
 
 export class RegistryInvalidNamespaceError extends RegistryError {
   constructor(public readonly name: string) {
-    const message = `Invalid registry namespace: "${name}". Registry names must start with @ (e.g., @shadcn, @v0).`
+    const message = `Invalid registry namespace: "${name}". Registry names must start with @ (e.g., @reignlabs, @v0).`
 
     super(message, {
       code: RegistryErrorCode.VALIDATION_ERROR,
@@ -294,7 +294,7 @@ export class ConfigMissingError extends RegistryError {
       code: RegistryErrorCode.NOT_CONFIGURED,
       context: { cwd },
       suggestion:
-        "Run 'npx shadcn@latest init' to create a components.json file, or check that you're in the correct directory.",
+        "Run 'npx reignlabs-ui@latest init' to create a components.json file, or check that you're in the correct directory.",
     })
     this.name = "ConfigMissingError"
   }
@@ -318,7 +318,7 @@ export class ConfigParseError extends RegistryError {
       cause: parseError,
       context: { cwd },
       suggestion:
-        "Check your components.json file for syntax errors or invalid configuration. Run 'npx shadcn@latest init' to regenerate a valid configuration.",
+        "Check your components.json file for syntax errors or invalid configuration. Run 'npx reignlabs-ui@latest init' to regenerate a valid configuration.",
     })
     this.name = "ConfigParseError"
   }
@@ -354,7 +354,7 @@ export class RegistriesIndexParseError extends RegistryError {
       cause: parseError,
       context: { parseError },
       suggestion:
-        "The registries index may be corrupted or have invalid registry namespace format. Registry names must start with @ (e.g., @shadcn, @example).",
+        "The registries index may be corrupted or have invalid registry namespace format. Registry names must start with @ (e.g., @reignlabs, @example).",
     })
 
     this.parseError = parseError

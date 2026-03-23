@@ -109,14 +109,14 @@ export function formatMonorepoMessage(
     )} from a monorepo root.`
   )
   logger.log(
-    `To use shadcn in a specific workspace, use the ${highlighter.info(
+    `To use reignlabs-ui in a specific workspace, use the ${highlighter.info(
       "-c"
     )} flag:`
   )
   logger.break()
 
   for (const target of targets) {
-    logger.log(`  shadcn ${command} -c ${target.name}`)
+    logger.log(`  reignlabs-ui ${command} -c ${target.name}`)
   }
 
   logger.break()

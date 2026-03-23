@@ -82,7 +82,7 @@ export default function FormRhfInput() {
                     {...field}
                     id="form-rhf-input-username"
                     aria-invalid={fieldState.invalid}
-                    placeholder="shadcn"
+                    placeholder="reignlabs"
                     autoComplete="username"
                   />
                   <FieldDescription>

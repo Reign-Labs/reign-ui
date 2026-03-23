@@ -50,9 +50,9 @@ import { componentRegistry } from "@/app/(internal)/sink/component-registry"
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
+    name: "Reign Labs",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatars/reignlabs.jpg",
   },
   teams: [
     {

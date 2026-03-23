@@ -53,10 +53,10 @@ export function DirectoryAddButton({
 
   const commands = React.useMemo(() => {
     return {
-      pnpm: `pnpm dlx shadcn@latest registry add ${registry.name}`,
-      npm: `npx shadcn@latest registry add ${registry.name}`,
-      yarn: `yarn dlx shadcn@latest registry add ${registry.name}`,
-      bun: `bunx --bun shadcn@latest registry add ${registry.name}`,
+      pnpm: `pnpm dlx reignlabs-ui@latest registry add ${registry.name}`,
+      npm: `npx reignlabs-ui@latest registry add ${registry.name}`,
+      yarn: `yarn dlx reignlabs-ui@latest registry add ${registry.name}`,
+      bun: `bunx --bun reignlabs-ui@latest registry add ${registry.name}`,
     }
   }, [registry.name])
 

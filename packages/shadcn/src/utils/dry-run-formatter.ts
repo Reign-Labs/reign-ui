@@ -28,7 +28,7 @@ function colorAction(action: DryRunFile["action"] | "update") {
 
 // Format the shared header line.
 function formatHeader(componentNames: string[]) {
-  return `${bold("┌")} ${bold(`shadcn add ${componentNames.join(", ")}`)} ${dim(
+  return `${bold("┌")} ${bold(`reignlabs-ui add ${componentNames.join(", ")}`)} ${dim(
     "(dry run)"
   )}`
 }

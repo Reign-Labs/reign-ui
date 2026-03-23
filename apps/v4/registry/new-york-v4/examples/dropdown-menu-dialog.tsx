@@ -89,7 +89,7 @@ export default function DropdownMenuDialog() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="shadcn@vercel.com"
+                placeholder="reignlabs@vercel.com"
                 autoComplete="off"
               />
             </Field>

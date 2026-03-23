@@ -8,7 +8,7 @@ import {
   CardHeader,
 } from "@/examples/base/ui/card"
 import { FieldGroup, FieldSeparator } from "@/examples/base/ui/field"
-import { type RegistryItem } from "shadcn/schema"
+import { type RegistryItem } from "reignlabs-ui/schema"
 
 import { useIsMobile } from "@/hooks/use-mobile"
 import { getThemesForBaseColor, STYLES } from "@/registry/config"

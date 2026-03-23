@@ -215,7 +215,7 @@ export function CodespacesCard() {
             <Separator className="-mx-2 my-2 w-auto!" />
             <div className="p-1.5 text-xs text-muted-foreground">
               Codespace usage for this repository is paid for by{" "}
-              <span className="font-medium">shadcn</span>.
+              <span className="font-medium">Reign Labs</span>.
             </div>
           </TabsContent>
           <TabsContent value="local">
@@ -281,7 +281,7 @@ export function CodespacesCard() {
                       </InputGroupAddon>
                       <InputGroupInput
                         id="https-url"
-                        defaultValue="https://github.com/shadcn-ui/ui.git"
+                        defaultValue="https://github.com/reign-labs/reignlabs-ui.git"
                         readOnly
                       />
                     </InputGroup>
@@ -309,7 +309,7 @@ export function CodespacesCard() {
                       </InputGroupAddon>
                       <InputGroupInput
                         id="ssh-url"
-                        defaultValue="git@github.com:shadcn-ui/ui.git"
+                        defaultValue="git@github.com:reign-labs/reignlabs-ui.git"
                         readOnly
                       />
                     </InputGroup>
@@ -337,7 +337,7 @@ export function CodespacesCard() {
                       </InputGroupAddon>
                       <InputGroupInput
                         id="cli-command"
-                        defaultValue="gh repo clone shadcn-ui/ui"
+                        defaultValue="gh repo clone reign-labs/reignlabs-ui"
                         readOnly
                       />
                     </InputGroup>

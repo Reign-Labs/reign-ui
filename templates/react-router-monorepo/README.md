@@ -1,13 +1,13 @@
-# shadcn/ui monorepo template
+# Reign Labs UI monorepo template
 
-This is a React Router monorepo template with shadcn/ui.
+This is a React Router monorepo template with Reign Labs UI.
 
 ## Adding components
 
 To add components to your app, run the following command at the root of your `web` app:
 
 ```bash
-pnpm dlx shadcn@latest add button -c apps/web
+pnpm dlx reignlabs-ui@latest add button -c apps/web
 ```
 
 This will place the ui components in the `packages/ui/src/components` directory.

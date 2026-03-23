@@ -10,7 +10,7 @@ export function AvatarGroupCountExample() {
   return (
     <AvatarGroup className="grayscale">
       <Avatar>
-        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
         <AvatarFallback>CN</AvatarFallback>
       </Avatar>
       <Avatar>

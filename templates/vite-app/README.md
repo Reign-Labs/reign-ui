@@ -1,13 +1,13 @@
-# React + TypeScript + Vite + shadcn/ui
+# React + TypeScript + Vite + Reign Labs UI
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+This is a template for a new Vite project with React, TypeScript, and Reign Labs UI.
 
 ## Adding components
 
 To add components to your app, run the following command:
 
 ```bash
-npx shadcn@latest add button
+npx reignlabs-ui@latest add button
 ```
 
 This will place the ui components in the `src/components` directory.

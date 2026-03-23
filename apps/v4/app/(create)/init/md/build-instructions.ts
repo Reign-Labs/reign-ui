@@ -94,7 +94,7 @@ function buildCssSection(
     \`\`\`css
     @import "tailwindcss";
     @import "tw-animate-css";
-    @import "shadcn/tailwind.css";
+    @import "reignlabs-ui/tailwind.css";
 
     @theme inline {
       --font-sans: var(--font-sans);
@@ -235,7 +235,7 @@ function buildFontSection(
 
 function buildComponentsJsonSection(config: DesignSystemConfig) {
   const componentsJson = {
-    $schema: "https://ui.shadcn.com/schema.json",
+    $schema: "https://ui.reign-labs.com/schema.json",
     style: `${config.base}-${config.style}`,
     tailwind: {
       css: "app/globals.css",
@@ -272,10 +272,10 @@ function buildAvailableComponentsSection(config: DesignSystemConfig) {
     ${list}
 
     To fetch the source for a component, use:
-    \`https://ui.shadcn.com/r/styles/${style}/<component>.json\`
+    \`https://ui.reign-labs.com/r/styles/${style}/<component>.json\`
 
     For documentation and examples, visit:
-    \`https://ui.shadcn.com/docs/components/${config.base}/<component>\`
+    \`https://ui.reign-labs.com/docs/components/${config.base}/<component>\`
   `
 }
 
@@ -292,6 +292,6 @@ function buildRtlSection(config: DesignSystemConfig) {
     <html dir="rtl">
     \`\`\`
 
-    For full RTL setup including the \`DirectionProvider\`, see the [RTL documentation](https://ui.shadcn.com/docs/rtl/${template}).
+    For full RTL setup including the \`DirectionProvider\`, see the [RTL documentation](https://ui.reign-labs.com/docs/rtl/${template}).
   `
 }

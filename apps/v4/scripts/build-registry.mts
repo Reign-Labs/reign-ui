@@ -2,13 +2,13 @@ import { spawn } from "child_process"
 import { promises as fs } from "fs"
 import path from "path"
 import { rimraf } from "rimraf"
-import { registrySchema, type RegistryItem } from "shadcn/schema"
+import { registrySchema, type RegistryItem } from "reignlabs-ui/schema"
 import {
   createStyleMap,
   transformDirection,
   transformIcons,
   transformStyle,
-} from "shadcn/utils"
+} from "reignlabs-ui/utils"
 import { Project, ScriptKind } from "ts-morph"
 
 import { getAllBlocks } from "@/lib/blocks"
@@ -463,7 +463,7 @@ async function buildRegistry(styleName: string) {
     const proc = spawn(
       "node",
       [
-        "../../packages/shadcn/dist/index.js",
+        "../../packages/reignlabs-ui/dist/index.js",
         "build",
         `registry-${styleName}.json`,
         "--output",

@@ -13,9 +13,9 @@ export const mcp = new Command()
   .action(async () => {
     logger.warn(
       `The ${highlighter.info(
-        "shadcn registry:mcp"
+        "reignlabs-ui registry:mcp"
       )} command is deprecated. Use the ${highlighter.info(
-        "shadcn mcp"
+        "reignlabs-ui mcp"
       )} command instead.`
     )
     logger.break()

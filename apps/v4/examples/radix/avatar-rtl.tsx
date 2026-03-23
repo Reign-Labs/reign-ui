@@ -46,8 +46,8 @@ export function AvatarRtl() {
     >
       <Avatar>
         <AvatarImage
-          src="https://github.com/shadcn.png"
-          alt="@shadcn"
+          src="https://github.com/reignlabs.png"
+          alt="@reignlabs"
           className="grayscale"
         />
         <AvatarFallback>CN</AvatarFallback>
@@ -62,7 +62,7 @@ export function AvatarRtl() {
       </Avatar>
       <AvatarGroup className="grayscale">
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar>

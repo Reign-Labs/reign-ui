@@ -1,4 +1,4 @@
-# shadcn MCP Server
+# reignlabs-ui MCP Server
 
 The CLI includes an MCP server that lets AI assistants search, browse, view, and install components from registries.
 
@@ -7,8 +7,8 @@ The CLI includes an MCP server that lets AI assistants search, browse, view, and
 ## Setup
 
 ```bash
-shadcn mcp        # start the MCP server (stdio)
-shadcn mcp init   # write config for your editor
+reignlabs-ui mcp        # start the MCP server (stdio)
+reignlabs-ui mcp init   # write config for your editor
 ```
 
 Editor config files:
@@ -25,45 +25,45 @@ Editor config files:
 
 ## Tools
 
-> **Tip:** MCP tools handle registry operations (search, view, install). For project configuration (aliases, framework, Tailwind version), use `npx shadcn@latest info` — there is no MCP equivalent.
+> **Tip:** MCP tools handle registry operations (search, view, install). For project configuration (aliases, framework, Tailwind version), use `npx reignlabs-ui@latest info` — there is no MCP equivalent.
 
-### `shadcn:get_project_registries`
+### `reignlabs-ui:get_project_registries`
 
 Returns registry names from `components.json`. Errors if no `components.json` exists.
 
 **Input:** none
 
-### `shadcn:list_items_in_registries`
+### `reignlabs-ui:list_items_in_registries`
 
 Lists all items from one or more registries.
 
 **Input:** `registries` (string[]), `limit` (number, optional), `offset` (number, optional)
 
-### `shadcn:search_items_in_registries`
+### `reignlabs-ui:search_items_in_registries`
 
 Fuzzy search across registries.
 
 **Input:** `registries` (string[]), `query` (string), `limit` (number, optional), `offset` (number, optional)
 
-### `shadcn:view_items_in_registries`
+### `reignlabs-ui:view_items_in_registries`
 
 View item details including full file contents.
 
-**Input:** `items` (string[]) — e.g. `["@shadcn/button", "@shadcn/card"]`
+**Input:** `items` (string[]) — e.g. `["@reignlabs-ui/button", "@reignlabs-ui/card"]`
 
-### `shadcn:get_item_examples_from_registries`
+### `reignlabs-ui:get_item_examples_from_registries`
 
 Find usage examples and demos with source code.
 
 **Input:** `registries` (string[]), `query` (string) — e.g. `"accordion-demo"`, `"button example"`
 
-### `shadcn:get_add_command_for_items`
+### `reignlabs-ui:get_add_command_for_items`
 
 Returns the CLI install command.
 
-**Input:** `items` (string[]) — e.g. `["@shadcn/button"]`
+**Input:** `items` (string[]) — e.g. `["@reignlabs-ui/button"]`
 
-### `shadcn:get_audit_checklist`
+### `reignlabs-ui:get_audit_checklist`
 
 Returns a checklist for verifying components (imports, deps, lint, TypeScript).
 
@@ -73,7 +73,7 @@ Returns a checklist for verifying components (imports, deps, lint, TypeScript).
 
 ## Configuring Registries
 
-Registries are set in `components.json`. The `@shadcn` registry is always built-in.
+Registries are set in `components.json`. The `@reignlabs-ui` registry is always built-in.
 
 ```json
 {
@@ -91,4 +91,4 @@ Registries are set in `components.json`. The `@shadcn` registry is always built-
 - URLs must contain `{name}`.
 - `${VAR}` references are resolved from environment variables.
 
-Community registry index: `https://ui.shadcn.com/r/registries.json`
+Community registry index: `https://ui.reign-labs.com/r/registries.json`

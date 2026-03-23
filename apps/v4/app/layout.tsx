@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
   description: siteConfig.description,
-  keywords: ["Next.js", "React", "Tailwind CSS", "Components", "shadcn"],
+  keywords: ["Next.js", "React", "Tailwind CSS", "Components", "Reign Labs"],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "Reign Labs",
+      url: "https://reign-labs.com",
     },
   ],
-  creator: "shadcn",
+  creator: "Reign Labs",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`],
-    creator: "@shadcn",
+    creator: "@reignlabs",
   },
   icons: {
     icon: "/favicon.ico",

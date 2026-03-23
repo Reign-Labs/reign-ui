@@ -1,10 +1,10 @@
 # Contributing
 
-Thanks for your interest in contributing to ui.shadcn.com. We're happy to have you here.
+Thanks for your interest in contributing to ui.reign-labs.com. We're happy to have you here.
 
 Please take a moment to review this document before submitting your first pull request. We also strongly recommend that you check for open issues and pull requests to see if someone else is working on something similar.
 
-If you need any help, feel free to reach out to [@shadcn](https://twitter.com/shadcn).
+If you need any help, feel free to reach out to [@reignlabs](https://twitter.com/reignlabs).
 
 ## About this repository
 
@@ -29,7 +29,7 @@ apps
             ├── example
             └── ui
 packages
-└── shadcn
+└── shadcn          # directory kept as-is for upstream sync; published as reignlabs-ui
 ```
 
 | Path                 | Description                              |
@@ -38,7 +38,7 @@ packages
 | `apps/v4/components` | The React components for the website.    |
 | `apps/v4/content`    | The content for the website.             |
 | `apps/v4/registry`   | The registry for the components.         |
-| `packages/shadcn`    | The `shadcn` package.                    |
+| `packages/shadcn`    | The `reignlabs-ui` package.              |
 
 ## Development
 
@@ -76,16 +76,16 @@ You can use the `pnpm --filter=[WORKSPACE]` command to start the development pro
 
 #### Examples
 
-1. To run the `ui.shadcn.com` website:
+1. To run the `ui.reign-labs.com` website:
 
 ```bash
 pnpm --filter=v4 dev
 ```
 
-2. To run the `shadcn` package:
+2. To run the `reignlabs-ui` package:
 
 ```bash
-pnpm --filter=shadcn dev
+pnpm --filter=reignlabs-ui dev
 ```
 
 ## Running the CLI Locally
@@ -101,13 +101,13 @@ To run the CLI locally, you can follow the workflow:
 2. In another terminal tab, test the CLI by running:
 
    ```bash
-   pnpm shadcn
+   pnpm cli
    ```
 
    To test the CLI in a specific app, use a command like:
 
    ```bash
-   pnpm shadcn <init | add | ...> -c ~/Desktop/my-app
+   pnpm cli <init | add | ...> -c ~/Desktop/my-app
    ```
 
 This workflow ensures that you are running the most recent version of the registry and testing the CLI properly in your local environment.
@@ -178,9 +178,9 @@ If you have a request for a new component, please open a discussion on GitHub. W
 
 ## CLI
 
-The `shadcn` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.shadcn.com/docs/cli).
+The `reignlabs-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.reign-labs.com/docs/cli).
 
-Any changes to the CLI should be made in the `packages/shadcn` directory. If you can, it would be great if you could add tests for your changes.
+Any changes to the CLI should be made in the `packages/shadcn` directory (kept as-is for upstream sync). If you can, it would be great if you could add tests for your changes.
 
 ## Testing
 

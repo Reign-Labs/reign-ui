@@ -4,13 +4,13 @@ import {
   registryItemSchema,
   type configSchema,
   type RegistryItem,
-} from "shadcn/schema"
+} from "reignlabs-ui/schema"
 import {
   transformFont,
   transformIcons,
   transformMenu,
   transformRender,
-} from "shadcn/utils"
+} from "reignlabs-ui/utils"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 import { z } from "zod"
 
@@ -227,7 +227,7 @@ function buildGlobalsCss(
 
   const content = dedent`@import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import "reignlabs-ui/tailwind.css";
 
   @custom-variant dark (&:is(.dark *));
 
@@ -268,7 +268,7 @@ function buildGlobalsCss(
 function buildComponentsJson(designSystemConfig: DesignSystemConfig) {
   const content = JSON.stringify(
     {
-      $schema: "https://ui.shadcn.com/schema.json",
+      $schema: "https://ui.reign-labs.com/schema.json",
       style: getStyle(designSystemConfig),
       rsc: true,
       tsx: true,
@@ -321,7 +321,7 @@ function buildPackageJson(dependencies: string[]) {
   for (const dep of dependencies) {
     const atIndex = dep.lastIndexOf("@")
     if (atIndex > 0) {
-      // Has version: e.g. "shadcn@latest".
+      // Has version: e.g. "reignlabs-ui@latest".
       baseDependencies[dep.slice(0, atIndex)] = dep.slice(atIndex + 1)
     } else {
       baseDependencies[dep] = "latest"
@@ -531,7 +531,7 @@ async function buildComponentFiles(designSystemConfig: DesignSystemConfig) {
 
 function buildTransformConfig(designSystemConfig: DesignSystemConfig) {
   return {
-    $schema: "https://ui.shadcn.com/schema.json",
+    $schema: "https://ui.reign-labs.com/schema.json",
     style: getStyle(designSystemConfig),
     rsc: true,
     tsx: true,

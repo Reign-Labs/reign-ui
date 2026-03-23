@@ -3,7 +3,7 @@ import { registryItemSchema, searchResultsSchema } from "@/src/schema"
 import { getPackageRunner } from "@/src/utils/get-package-manager"
 import { z } from "zod"
 
-const SHADCN_CLI_COMMAND = "shadcn@latest"
+const SHADCN_CLI_COMMAND = "reignlabs-ui@latest"
 
 export async function npxShadcn(command: string) {
   const packageRunner = await getPackageRunner(process.cwd())

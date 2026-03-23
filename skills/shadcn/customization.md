@@ -64,15 +64,15 @@ import { ThemeProvider } from "next-themes"
 ## Changing the Theme
 
 ```bash
-# Apply a preset code from ui.shadcn.com.
-npx shadcn@latest init --preset a2r6bw --force
+# Apply a preset code from ui.reign-labs.com.
+npx reignlabs-ui@latest init --preset a2r6bw --force
 
 # Switch to a named preset.
-npx shadcn@latest init --preset radix-nova --force
-npx shadcn@latest init --reinstall  # update existing components to match
+npx reignlabs-ui@latest init --preset radix-nova --force
+npx reignlabs-ui@latest init --reinstall  # update existing components to match
 
 # Use a custom theme URL.
-npx shadcn@latest init --preset "https://ui.shadcn.com/init?base=radix&style=nova&theme=blue&..." --force
+npx reignlabs-ui@latest init --preset "https://ui.reign-labs.com/init?base=radix&style=nova&theme=blue&..." --force
 ```
 
 Or edit CSS variables directly in `globals.css`.
@@ -81,7 +81,7 @@ Or edit CSS variables directly in `globals.css`.
 
 ## Adding Custom Colors
 
-Add variables to the file at `tailwindCssFile` from `npx shadcn@latest info` (typically `globals.css`). Never create a new CSS file for this.
+Add variables to the file at `tailwindCssFile` from `npx reignlabs-ui@latest info` (typically `globals.css`). Never create a new CSS file for this.
 
 ```css
 /* 1. Define in the global CSS file. */
@@ -103,7 +103,7 @@ Add variables to the file at `tailwindCssFile` from `npx shadcn@latest info` (ty
 }
 ```
 
-When `tailwindVersion` is `"v3"` (check via `npx shadcn@latest info`), register in `tailwind.config.js` instead:
+When `tailwindVersion` is `"v3"` (check via `npx reignlabs-ui@latest info`), register in `tailwind.config.js` instead:
 
 ```js
 // 2b. Register with Tailwind v3 (tailwind.config.js).
@@ -162,7 +162,7 @@ warning: "bg-warning text-warning-foreground hover:bg-warning/90",
 
 ### 4. Wrapper components
 
-Compose shadcn/ui primitives into higher-level components:
+Compose Reign Labs UI primitives into higher-level components:
 
 ```tsx
 export function ConfirmDialog({ title, description, onConfirm, children }) {
@@ -189,14 +189,14 @@ export function ConfirmDialog({ title, description, onConfirm, children }) {
 ## Checking for Updates
 
 ```bash
-npx shadcn@latest add button --diff
+npx reignlabs-ui@latest add button --diff
 ```
 
 To preview exactly what would change before updating, use `--dry-run` and `--diff`:
 
 ```bash
-npx shadcn@latest add button --dry-run        # see all affected files
-npx shadcn@latest add button --diff button.tsx # see the diff for a specific file
+npx reignlabs-ui@latest add button --dry-run        # see all affected files
+npx reignlabs-ui@latest add button --diff button.tsx # see the diff for a specific file
 ```
 
 See [Updating Components in SKILL.md](./SKILL.md#updating-components) for the full smart merge workflow.

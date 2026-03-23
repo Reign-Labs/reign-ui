@@ -224,7 +224,7 @@ export async function promptForPreset(options: {
     logger.log(
       `  Then ${highlighter.info(
         "copy and run the command"
-      )} from ui.shadcn.com.`
+      )} from ui.reign-labs.com.`
     )
     logger.break()
 

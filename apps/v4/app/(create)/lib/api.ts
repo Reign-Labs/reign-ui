@@ -1,6 +1,6 @@
 import "server-only"
 
-import { registryItemSchema } from "shadcn/schema"
+import { registryItemSchema } from "reignlabs-ui/schema"
 
 import { BASES, getThemesForBaseColor, type BaseName } from "@/registry/config"
 import {

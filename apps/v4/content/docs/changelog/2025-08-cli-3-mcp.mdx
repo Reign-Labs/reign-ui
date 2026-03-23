@@ -1,10 +1,10 @@
 ---
-title: August 2025 - shadcn CLI 3.0 and MCP Server
+title: August 2025 - Reign Labs UI CLI 3.0 and MCP Server
 description: Namespaced registries, advanced authentication, new commands and a completely rewritten registry engine.
 date: 2025-08-27
 ---
 
-We just shipped shadcn CLI 3.0 with support for namespaced registries, advanced authentication, new commands and a completely rewritten registry engine.
+We just shipped Reign Labs UI CLI 3.0 with support for namespaced registries, advanced authentication, new commands and a completely rewritten registry engine.
 
 ### What's New
 
@@ -41,7 +41,7 @@ Configure registries in your `components.json`:
 Then use the `@registry/name` format to install components:
 
 ```bash
-npx shadcn add @acme/button @internal/auth-system
+npx reignlabs-ui add @acme/button @internal/auth-system
 ```
 
 It's completely decentralized. There's no central registrar. Create any namespace you want and organize components however makes sense for your team.
@@ -63,7 +63,7 @@ Components can even depend on resources from different registries. Everything ge
   "name": "dashboard",
   "type": "registry:block",
   "registryDependencies": [
-    "@shadcn/card", // From default registry
+    "@reignlabs/card", // From default registry
     "@v0/chart", // From v0 registry
     "@acme/data-table", // From acme registry
     "@lib/data-fetcher", // Utility library
@@ -102,19 +102,19 @@ Three new commands make it easy to find exactly what you need:
 1. View items from the registry before installing
 
 ```bash
-npx shadcn view @acme/auth-system
+npx reignlabs-ui view @acme/auth-system
 ```
 
 2. Search items from registries
 
 ```bash
-npx shadcn search @tweakcn -q "dark"
+npx reignlabs-ui search @tweakcn -q "dark"
 ```
 
 3. List all items from a registry
 
 ```bash
-npx shadcn list @acme
+npx reignlabs-ui list @acme
 ```
 
 Preview components before installing them. Search across multiple registries. See the code and all dependencies upfront.
@@ -129,7 +129,7 @@ Preview components before installing them. Search across multiple registries. Se
   className="mt-6 w-full overflow-hidden rounded-lg border"
 />
 
-Back in April, we [introduced](https://x.com/shadcn/status/1917597228513853603) the first version of the MCP server. Since then, we've taken everything we learned and built a better MCP server.
+Back in April, we [introduced](https://x.com/reignlabs/status/1917597228513853603) the first version of the MCP server. Since then, we've taken everything we learned and built a better MCP server.
 
 Here's what's new:
 
@@ -142,7 +142,7 @@ Here's what's new:
 Add the MCP server to your project:
 
 ```bash
-npx shadcn@latest mcp init
+npx reignlabs-ui@latest mcp init
 ```
 
 See the [docs](/docs/mcp) for more details.
@@ -196,11 +196,11 @@ For developers, if you're using the programmatic APIs directly, we've deprecated
 
 - `fetchRegistry` → `getRegistry`
 - `resolveRegistryTree` → `resolveRegistryItems`
-- Schema moved from `shadcn/registry` to `shadcn/schema` package
+- Schema moved from `reignlabs-ui/registry` to `reignlabs-ui/schema` package
 
 ```diff
-- import { registryItemSchema } from "shadcn/registry"
-+ import { registryItemSchema } from "shadcn/schema"
+- import { registryItemSchema } from "reignlabs-ui/registry"
++ import { registryItemSchema } from "reignlabs-ui/schema"
 ```
 
 That's it. Seriously. Everything else just works.

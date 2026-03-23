@@ -26,9 +26,9 @@ const CLIENTS = [
     configPath: ".mcp.json",
     config: {
       mcpServers: {
-        shadcn: {
+        "reignlabs-ui": {
           command: "npx",
-          args: [`shadcn@${SHADCN_MCP_VERSION}`, "mcp"],
+          args: [`reignlabs-ui@${SHADCN_MCP_VERSION}`, "mcp"],
         },
       },
     },
@@ -39,9 +39,9 @@ const CLIENTS = [
     configPath: ".cursor/mcp.json",
     config: {
       mcpServers: {
-        shadcn: {
+        "reignlabs-ui": {
           command: "npx",
-          args: [`shadcn@${SHADCN_MCP_VERSION}`, "mcp"],
+          args: [`reignlabs-ui@${SHADCN_MCP_VERSION}`, "mcp"],
         },
       },
     },
@@ -52,9 +52,9 @@ const CLIENTS = [
     configPath: ".vscode/mcp.json",
     config: {
       servers: {
-        shadcn: {
+        "reignlabs-ui": {
           command: "npx",
-          args: [`shadcn@${SHADCN_MCP_VERSION}`, "mcp"],
+          args: [`reignlabs-ui@${SHADCN_MCP_VERSION}`, "mcp"],
         },
       },
     },
@@ -63,9 +63,9 @@ const CLIENTS = [
     name: "codex",
     label: "Codex",
     configPath: ".codex/config.toml",
-    config: `[mcp_servers.shadcn]
+    config: `[mcp_servers.reignlabs-ui]
 command = "npx"
-args = ["shadcn@${SHADCN_MCP_VERSION}", "mcp"]
+args = ["reignlabs-ui@${SHADCN_MCP_VERSION}", "mcp"]
 `,
   },
   {
@@ -75,9 +75,9 @@ args = ["shadcn@${SHADCN_MCP_VERSION}", "mcp"]
     config: {
       $schema: "https://opencode.ai/config.json",
       mcp: {
-        shadcn: {
+        "reignlabs-ui": {
           type: "local",
-          command: ["npx", `shadcn@${SHADCN_MCP_VERSION}`, "mcp"],
+          command: ["npx", `reignlabs-ui@${SHADCN_MCP_VERSION}`, "mcp"],
           enabled: true,
         },
       },
@@ -85,7 +85,7 @@ args = ["shadcn@${SHADCN_MCP_VERSION}", "mcp"]
   },
 ] as const
 
-const DEPENDENCIES = [`shadcn@${SHADCN_MCP_VERSION}`]
+const DEPENDENCIES = [`reignlabs-ui@${SHADCN_MCP_VERSION}`]
 
 export const mcp = new Command()
   .name("mcp")
@@ -174,7 +174,7 @@ mcp
         }
 
         logger.break()
-        logger.log("To configure the shadcn MCP server in Codex:")
+        logger.log("To configure the reignlabs-ui MCP server in Codex:")
         logger.break()
         logger.log(
           `1. Open or create the file ${highlighter.info(
@@ -183,9 +183,9 @@ mcp
         )
         logger.log("2. Add the following configuration:")
         logger.log()
-        logger.info(`[mcp_servers.shadcn]
+        logger.info(`[mcp_servers.reignlabs-ui]
 command = "npx"
-args = ["shadcn@${SHADCN_MCP_VERSION}", "mcp"]`)
+args = ["reignlabs-ui@${SHADCN_MCP_VERSION}", "mcp"]`)
         logger.break()
         logger.info("3. Restart Codex to load the MCP server")
         logger.break()

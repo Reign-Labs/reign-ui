@@ -86,7 +86,7 @@ export default function InputGroupDemo() {
         </InputGroupAddon>
       </InputGroup>
       <InputGroup>
-        <InputGroupInput placeholder="@shadcn" />
+        <InputGroupInput placeholder="@reignlabs" />
         <InputGroupAddon align="inline-end">
           <div className="flex size-4 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <IconCheck className="size-3" />

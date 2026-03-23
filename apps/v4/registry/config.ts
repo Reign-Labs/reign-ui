@@ -2,7 +2,7 @@ import {
   iconLibraries,
   type IconLibrary,
   type IconLibraryName,
-} from "shadcn/icons"
+} from "reignlabs-ui/icons"
 import { z } from "zod"
 
 import { BASE_COLORS, type BaseColor } from "@/registry/base-colors"
@@ -11,7 +11,7 @@ import { bodyFonts, fonts, headingFonts } from "@/registry/fonts"
 import { STYLES, type Style } from "@/registry/styles"
 import { THEMES, type Theme } from "@/registry/themes"
 
-const SHADCN_VERSION = "latest"
+const REIGNLABS_VERSION = "latest"
 
 export { BASES, type Base }
 export { STYLES, type Style }
@@ -480,7 +480,7 @@ export function buildRegistryBase(config: DesignSystemConfig) {
 
   // Build dependencies.
   const dependencies = [
-    `shadcn@${SHADCN_VERSION}`,
+    `reignlabs-ui@${REIGNLABS_VERSION}`,
     "class-variance-authority",
     "tw-animate-css",
     ...(baseItem.dependencies ?? []),
@@ -525,14 +525,14 @@ export function buildRegistryBase(config: DesignSystemConfig) {
     },
     css: {
       '@import "tw-animate-css"': {},
-      '@import "shadcn/tailwind.css"': {},
+      '@import "reignlabs-ui/tailwind.css"': {},
       "@layer base": {
         "*": { "@apply border-border outline-ring/50": {} },
         body: { "@apply bg-background text-foreground": {} },
       },
     },
     ...(config.rtl && {
-      docs: `To learn how to set up the RTL provider and fonts for your app, see https://ui.shadcn.com/docs/rtl/${config.template === "next-monorepo" ? "next" : (config.template ?? "next")}`,
+      docs: `To learn how to set up the RTL provider and fonts for your app, see https://ui.reign-labs.com/docs/rtl/${config.template === "next-monorepo" ? "next" : (config.template ?? "next")}`,
     }),
   }
 }

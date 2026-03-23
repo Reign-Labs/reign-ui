@@ -40,15 +40,15 @@ function AvatarSizes() {
     <Example title="Sizes">
       <div className="flex flex-wrap items-center gap-2">
         <Avatar size="sm">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="lg">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
@@ -214,7 +214,7 @@ function AvatarGroupExample() {
     <Example title="Group">
       <AvatarGroup>
         <Avatar size="sm">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="sm">
@@ -234,7 +234,7 @@ function AvatarGroupExample() {
       </AvatarGroup>
       <AvatarGroup>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar>
@@ -254,7 +254,7 @@ function AvatarGroupExample() {
       </AvatarGroup>
       <AvatarGroup>
         <Avatar size="lg">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="lg">
@@ -281,7 +281,7 @@ function AvatarGroupWithCount() {
     <Example title="Group with Count">
       <AvatarGroup>
         <Avatar size="sm">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="sm">
@@ -302,7 +302,7 @@ function AvatarGroupWithCount() {
       </AvatarGroup>
       <AvatarGroup>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar>
@@ -323,7 +323,7 @@ function AvatarGroupWithCount() {
       </AvatarGroup>
       <AvatarGroup>
         <Avatar size="lg">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="lg">
@@ -351,7 +351,7 @@ function AvatarGroupWithIconCount() {
     <Example title="Group with Icon Count">
       <AvatarGroup>
         <Avatar size="sm">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="sm">
@@ -380,7 +380,7 @@ function AvatarGroupWithIconCount() {
       </AvatarGroup>
       <AvatarGroup>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar>
@@ -410,8 +410,8 @@ function AvatarGroupWithIconCount() {
       <AvatarGroup>
         <Avatar size="lg">
           <AvatarImage
-            src="https://github.com/shadcn.png"
-            alt="@shadcn"
+            src="https://github.com/reignlabs.png"
+            alt="@reignlabs"
             className="grayscale"
           />
           <AvatarFallback>CN</AvatarFallback>
@@ -455,8 +455,8 @@ function AvatarInEmpty() {
             <AvatarGroup>
               <Avatar size="lg">
                 <AvatarImage
-                  src="https://github.com/shadcn.png"
-                  alt="@shadcn"
+                  src="https://github.com/reignlabs.png"
+                  alt="@reignlabs"
                   className="grayscale"
                 />
                 <AvatarFallback>CN</AvatarFallback>

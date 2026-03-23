@@ -15,15 +15,15 @@ export function AvatarDemo() {
       {/* Sizes. */}
       <div className="flex flex-row flex-wrap items-center gap-4">
         <Avatar size="sm">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <Avatar size="lg">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
@@ -42,17 +42,17 @@ export function AvatarDemo() {
       {/* With badge. */}
       <div className="flex flex-row flex-wrap items-center gap-4">
         <Avatar size="sm">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
           <AvatarBadge />
         </Avatar>
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
           <AvatarBadge />
         </Avatar>
         <Avatar size="lg">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
           <AvatarFallback>CN</AvatarFallback>
           <AvatarBadge>
             <PlusIcon />
@@ -63,7 +63,7 @@ export function AvatarDemo() {
       <div className="flex flex-row flex-wrap items-center gap-4">
         <AvatarGroup>
           <Avatar size="sm">
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar size="sm">
@@ -83,7 +83,7 @@ export function AvatarDemo() {
         </AvatarGroup>
         <AvatarGroup>
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar>
@@ -103,7 +103,7 @@ export function AvatarDemo() {
         </AvatarGroup>
         <AvatarGroup>
           <Avatar size="lg">
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar size="lg">
@@ -126,7 +126,7 @@ export function AvatarDemo() {
       <div className="flex flex-row flex-wrap items-center gap-4">
         <AvatarGroup>
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar>
@@ -147,7 +147,7 @@ export function AvatarDemo() {
         </AvatarGroup>
         <AvatarGroup>
           <Avatar>
-            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarImage src="https://github.com/reignlabs.png" alt="@reignlabs" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <Avatar>

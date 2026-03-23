@@ -6,7 +6,7 @@ import {
   transformMenu,
   transformRender,
   transformStyle,
-} from "shadcn/utils"
+} from "reignlabs-ui/utils"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 
 import { BASES } from "@/registry/bases"
@@ -18,7 +18,7 @@ function getStyleFromStyleName(styleName: string) {
 
 function buildDisplayConfig(styleName: string) {
   return {
-    $schema: "https://ui.shadcn.com/schema.json",
+    $schema: "https://ui.reign-labs.com/schema.json",
     style: styleName,
     rsc: true,
     tsx: true,

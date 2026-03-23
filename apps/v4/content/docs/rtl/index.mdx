@@ -1,9 +1,9 @@
 ---
 title: "RTL"
-description: "Right-to-left support for shadcn/ui components."
+description: "Right-to-left support for Reign Labs UI components."
 ---
 
-shadcn/ui components have first-class support for right-to-left (RTL) layouts. Text alignment, positioning, and directional styles automatically adapt for languages like Arabic, Hebrew, and Persian.
+Reign Labs UI components have first-class support for right-to-left (RTL) layouts. Text alignment, positioning, and directional styles automatically adapt for languages like Arabic, Hebrew, and Persian.
 
 <ComponentPreview
   styleName="base-nova"
@@ -63,7 +63,7 @@ Select your framework to get started with RTL support.
 
 ## How it works
 
-When you add components with `rtl: true` set in your `components.json`, the shadcn CLI automatically transforms classes and props to be RTL compatible:
+When you add components with `rtl: true` set in your `components.json`, the Reign Labs UI CLI automatically transforms classes and props to be RTL compatible:
 
 - Physical positioning classes like `left-*` and `right-*` are converted to logical equivalents like `start-*` and `end-*`.
 - Directional props are updated to use logical values.
@@ -74,11 +74,11 @@ When you add components with `rtl: true` set in your `components.json`, the shad
 
 Click the link below to open a Next.js project with RTL support in v0.
 
-[![Open in v0](https://v0.app/chat-static/button.svg)](https://v0.app/chat/api/open?url=https://github.com/shadcn-ui/next-template-rtl)
+[![Open in v0](https://v0.app/chat-static/button.svg)](https://v0.app/chat/api/open?url=https://github.com/reign-labs/next-template-rtl)
 
 ## Supported Styles
 
-Automatic RTL transformation via the CLI is only available for projects created using `shadcn create` with the new styles (`base-nova`, `radix-nova`, etc.).
+Automatic RTL transformation via the CLI is only available for projects created using `reignlabs-ui create` with the new styles (`base-nova`, `radix-nova`, etc.).
 
 For other styles, see the [Migration Guide](#migrating-existing-components).
 
@@ -125,7 +125,7 @@ If you have existing components installed before enabling RTL, you can migrate t
 <Step>Run the migrate command</Step>
 
 ```bash
-npx shadcn@latest migrate rtl [path]
+npx reignlabs-ui@latest migrate rtl [path]
 ```
 
 `[path]` accepts a path or glob pattern to migrate. If you don't provide a path, it will migrate all the files in the `ui` directory.
@@ -151,7 +151,7 @@ Some icons like `ArrowRightIcon` or `ChevronLeftIcon` might need the `rtl:rotate
 Add the direction component to your project.
 
 ```bash
-npx shadcn@latest add direction
+npx reignlabs-ui@latest add direction
 ```
 
 ### Add DirectionProvider

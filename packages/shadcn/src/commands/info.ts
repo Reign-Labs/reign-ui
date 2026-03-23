@@ -18,7 +18,7 @@ import { logger } from "@/src/utils/logger"
 import { Command } from "commander"
 
 const GITHUB_RAW_BASE =
-  "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases"
+  "https://raw.githubusercontent.com/reign-labs/reignlabs-ui/refs/heads/main/apps/v4/registry/bases"
 
 export const info = new Command()
   .name("info")
@@ -148,7 +148,7 @@ function collectInfo(
       components: `${SHADCN_URL}/docs/components/${base}/[component].md`,
       ui: `${GITHUB_RAW_BASE}/${base}/ui/[component].tsx`,
       examples: `${GITHUB_RAW_BASE}/${base}/examples/[component]-example.tsx`,
-      schema: "https://ui.shadcn.com/schema.json",
+      schema: "https://ui.reign-labs.com/schema.json",
     },
   }
 }

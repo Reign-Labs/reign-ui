@@ -174,8 +174,8 @@ export function NotionPromptForm() {
         { type: "page", title: t.analyticsReport, image: "📈" },
         {
           type: "user",
-          title: "shadcn",
-          image: "https://github.com/shadcn.png",
+          title: "Reign Labs",
+          image: "https://github.com/reignlabs.png",
           workspace: t.workspace,
         },
         {
@@ -435,10 +435,10 @@ export function NotionPromptForm() {
                     <DropdownMenuSub>
                       <DropdownMenuSubTrigger>
                         <Avatar className="size-4">
-                          <AvatarImage src="https://github.com/shadcn.png" />
+                          <AvatarImage src="https://github.com/reignlabs.png" />
                           <AvatarFallback>CN</AvatarFallback>
                         </Avatar>
-                        shadcn
+                        Reign Labs
                       </DropdownMenuSubTrigger>
                       <DropdownMenuSubContent
                         className="w-72 rounded-lg p-0"

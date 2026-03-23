@@ -1,4 +1,4 @@
-import { type Registry } from "shadcn/schema"
+import { type Registry } from "reignlabs-ui/schema"
 
 export const charts: Registry["items"] = [
   // Area Charts

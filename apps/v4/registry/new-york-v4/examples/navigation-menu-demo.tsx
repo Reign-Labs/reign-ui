@@ -70,7 +70,7 @@ export default function NavigationMenuDemo() {
                     href="/"
                   >
                     <div className="mb-2 text-lg font-medium sm:mt-4">
-                      shadcn/ui
+                      Reign Labs UI
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components built with Tailwind CSS.

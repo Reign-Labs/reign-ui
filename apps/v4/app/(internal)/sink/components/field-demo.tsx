@@ -1384,7 +1384,7 @@ function FinderPreferencesForm() {
                   </SelectItem>
                   <SelectItem value="home">
                     <FolderIcon />
-                    shadcn
+                    reignlabs
                   </SelectItem>
                   <SelectItem value="desktop">
                     <MonitorIcon /> Desktop

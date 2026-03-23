@@ -19,7 +19,7 @@ import {
 
 export const server = new Server(
   {
-    name: "shadcn",
+    name: "reignlabs-ui",
     version: "1.0.0",
   },
   {
@@ -48,7 +48,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             registries: z
               .array(z.string())
               .describe(
-                "Array of registry names to search (e.g., ['@shadcn', '@acme'])"
+                "Array of registry names to search (e.g., ['@reignlabs', '@acme'])"
               ),
             limit: z
               .number()
@@ -70,7 +70,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             registries: z
               .array(z.string())
               .describe(
-                "Array of registry names to search (e.g., ['@shadcn', '@acme'])"
+                "Array of registry names to search (e.g., ['@reignlabs', '@acme'])"
               ),
             query: z
               .string()
@@ -97,7 +97,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             items: z
               .array(z.string())
               .describe(
-                "Array of item names with registry prefix (e.g., ['@shadcn/button', '@shadcn/card'])"
+                "Array of item names with registry prefix (e.g., ['@reignlabs/button', '@reignlabs/card'])"
               ),
           })
         ),
@@ -111,7 +111,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             registries: z
               .array(z.string())
               .describe(
-                "Array of registry names to search (e.g., ['@shadcn', '@acme'])"
+                "Array of registry names to search (e.g., ['@reignlabs', '@acme'])"
               ),
             query: z
               .string()
@@ -124,13 +124,13 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       {
         name: "get_add_command_for_items",
         description:
-          "Get the shadcn CLI add command for specific items in a registry. This is useful for adding one or more components to your project.",
+          "Get the reignlabs-ui CLI add command for specific items in a registry. This is useful for adding one or more components to your project.",
         inputSchema: zodToJsonSchema(
           z.object({
             items: z
               .array(z.string())
               .describe(
-                "Array of items to get the add command for prefixed with the registry name (e.g., ['@shadcn/button', '@shadcn/card'])"
+                "Array of items to get the add command for prefixed with the registry name (e.g., ['@reignlabs/button', '@reignlabs/card'])"
               ),
           })
         ),
@@ -184,9 +184,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                 \`${await npxShadcn("view @name-of-registry")}\`
 
                 For example: \`${await npxShadcn(
-                  "view @shadcn"
+                  "view @reignlabs"
                 )}\` or \`${await npxShadcn(
-                  "view @shadcn @acme"
+                  "view @reignlabs @acme"
                 )}\` to view multiple registries.
                 `,
             },
@@ -298,7 +298,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                 type: "text",
                 text: dedent`No items found for: ${args.items.join(", ")}
 
-                Make sure the item names are correct and include the registry prefix (e.g., @shadcn/button).`,
+                Make sure the item names are correct and include the registry prefix (e.g., @reignlabs/button).`,
               },
             ],
           }

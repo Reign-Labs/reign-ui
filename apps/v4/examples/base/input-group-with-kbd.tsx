@@ -60,7 +60,7 @@ export function InputGroupWithKbd() {
       <Field>
         <FieldLabel htmlFor="input-username-26">Username</FieldLabel>
         <InputGroup>
-          <InputGroupInput id="input-username-26" defaultValue="shadcn" />
+          <InputGroupInput id="input-username-26" defaultValue="reignlabs" />
           <InputGroupAddon align="inline-end">
             <div className="flex size-4 items-center justify-center rounded-full bg-green-500 dark:bg-green-800">
               <CheckIcon className="size-3 text-white" />
@@ -117,7 +117,7 @@ export function InputGroupWithKbd() {
           Loading (&quot;data-disabled=&quot;true&quot;)
         </FieldLabel>
         <InputGroup>
-          <InputGroupInput id="input-group-29" disabled defaultValue="shadcn" />
+          <InputGroupInput id="input-group-29" disabled defaultValue="reignlabs" />
           <InputGroupAddon align="inline-end">
             <Spinner />
           </InputGroupAddon>

@@ -16,7 +16,7 @@ export default function EmptyAvatar() {
         <EmptyMedia variant="default">
           <Avatar className="size-12">
             <AvatarImage
-              src="https://github.com/shadcn.png"
+              src="https://github.com/reignlabs.png"
               className="grayscale"
             />
             <AvatarFallback>LR</AvatarFallback>

@@ -1,4 +1,4 @@
-import { registryItemSchema, type Registry } from "shadcn/schema"
+import { registryItemSchema, type Registry } from "reignlabs-ui/schema"
 import { z } from "zod"
 
 import { themes } from "../_legacy-themes"
@@ -23,11 +23,11 @@ const DEPRECATED_ITEMS = [
 const NEW_YORK_V4_STYLE = {
   type: "registry:style",
   dependencies: ["class-variance-authority", "lucide-react", "radix-ui"],
-  devDependencies: ["tw-animate-css", "shadcn"],
+  devDependencies: ["tw-animate-css", "reignlabs-ui"],
   registryDependencies: ["utils"],
   css: {
     '@import "tw-animate-css"': {},
-    '@import "shadcn/tailwind.css"': {},
+    '@import "reignlabs-ui/tailwind.css"': {},
     "@layer base": {
       "*": {
         "@apply border-border outline-ring/50": {},
@@ -42,8 +42,8 @@ const NEW_YORK_V4_STYLE = {
 }
 
 export const registry = {
-  name: "shadcn/ui",
-  homepage: "https://ui.shadcn.com",
+  name: "reignlabs-ui/ui",
+  homepage: "https://ui.reign-labs.com",
   items: z.array(registryItemSchema).parse(
     [
       {

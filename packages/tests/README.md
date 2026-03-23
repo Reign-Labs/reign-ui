@@ -1,6 +1,6 @@
 # Tests
 
-This package contains integration tests that verify the shadcn CLI works correctly with a local registry. The tests run actual CLI commands against test fixtures to ensure files are created and updated properly.
+This package contains integration tests that verify the reignlabs-ui CLI works correctly with a local registry. The tests run actual CLI commands against test fixtures to ensure files are created and updated properly.
 
 ## Running Tests
 

@@ -22,7 +22,7 @@ function AspectRatio16x9() {
     <Example title="16:9" className="items-center justify-center">
       <AspectRatio ratio={16 / 9} className="rounded-lg bg-muted">
         <Image
-          src="https://avatar.vercel.sh/shadcn1"
+          src="https://avatar.vercel.sh/reignlabs1"
           alt="Photo"
           fill
           className="h-full w-full rounded-lg object-cover grayscale dark:brightness-20"
@@ -37,7 +37,7 @@ function AspectRatio1x1() {
     <Example title="1:1" className="items-start">
       <AspectRatio ratio={1 / 1} className="rounded-lg bg-muted">
         <Image
-          src="https://avatar.vercel.sh/shadcn1"
+          src="https://avatar.vercel.sh/reignlabs1"
           alt="Photo"
           fill
           className="h-full w-full rounded-lg object-cover grayscale dark:brightness-20"
@@ -52,7 +52,7 @@ function AspectRatio9x16() {
     <Example title="9:16" className="items-center justify-center">
       <AspectRatio ratio={9 / 16} className="rounded-lg bg-muted">
         <Image
-          src="https://avatar.vercel.sh/shadcn1"
+          src="https://avatar.vercel.sh/reignlabs1"
           alt="Photo"
           fill
           className="h-full w-full rounded-lg object-cover grayscale dark:brightness-20"
@@ -67,7 +67,7 @@ function AspectRatio21x9() {
     <Example title="21:9" className="items-center justify-center">
       <AspectRatio ratio={21 / 9} className="rounded-lg bg-muted">
         <Image
-          src="https://avatar.vercel.sh/shadcn1"
+          src="https://avatar.vercel.sh/reignlabs1"
           alt="Photo"
           fill
           className="h-full w-full rounded-lg object-cover grayscale dark:brightness-20"

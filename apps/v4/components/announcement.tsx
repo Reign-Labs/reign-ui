@@ -7,7 +7,7 @@ export function Announcement() {
   return (
     <Badge asChild variant="secondary" className="bg-muted">
       <Link href="/docs/changelog/2026-03-cli-v4">
-        shadcn/skills, presets and more <ArrowRightIcon />
+        Reign Labs UI skills, presets and more <ArrowRightIcon />
       </Link>
     </Badge>
   )

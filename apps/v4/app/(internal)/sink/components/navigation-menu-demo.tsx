@@ -66,7 +66,7 @@ export function NavigationMenuDemo() {
                       href="/"
                     >
                       <div className="mt-4 mb-2 text-lg font-medium">
-                        shadcn/ui
+                        Reign Labs UI
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
                         Beautifully designed components built with Tailwind CSS.

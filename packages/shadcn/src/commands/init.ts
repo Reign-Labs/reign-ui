@@ -325,7 +325,7 @@ export const init = new Command()
           logger.log(
             `  Please create a new app with ${highlighter.info(
               "laravel new --react"
-            )} first then run ${highlighter.info("shadcn init")}.`
+            )} first then run ${highlighter.info("reignlabs-ui init")}.`
           )
           logger.log(
             `  See ${highlighter.info(
@@ -877,7 +877,7 @@ async function promptForConfig(defaultConfig: Config | null = null) {
   }
 
   return rawConfigSchema.parse({
-    $schema: "https://ui.shadcn.com/schema.json",
+    $schema: "https://ui.reign-labs.com/schema.json",
     style: options.style,
     tailwind: {
       config: options.tailwindConfig,

@@ -27,8 +27,8 @@ export function NoTeamMembers() {
               <AvatarGroup className="grayscale">
                 <Avatar size="lg">
                   <AvatarImage
-                    src="https://github.com/shadcn.png"
-                    alt="@shadcn"
+                    src="https://github.com/reignlabs.png"
+                    alt="@reignlabs"
                   />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
