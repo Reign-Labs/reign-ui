@@ -1,0 +1,20 @@
+{
+  "title": "Get Started",
+  "pages": [
+    "index",
+    "[Installation](/docs/installation)",
+    "components-json",
+    "theming",
+    "[Dark Mode](/docs/dark-mode)",
+    "[RTL](/docs/rtl)",
+    "[CLI](/docs/cli)",
+    "monorepo",
+    "skills",
+    "javascript",
+    "mcp",
+    "blocks",
+    "[Changelog](/docs/changelog)",
+    "[llms.txt](/llms.txt)",
+    "!new"
+  ]
+}

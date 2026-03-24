@@ -1,0 +1,14 @@
+{
+  "title": "Registry",
+  "pages": [
+    "index",
+    "getting-started",
+    "namespace",
+    "authentication",
+    "examples",
+    "mcp",
+    "registry-index",
+    "registry-json",
+    "registry-item-json"
+  ]
+}

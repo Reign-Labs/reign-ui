@@ -1,0 +1,5 @@
+interface:
+  display_name: "Reign Labs UI"
+  short_description: "Manages Reign Labs UI components — adding, searching, fixing, debugging, styling, and composing UI."
+  icon_small: "./assets/reignlabs-small.png"
+  icon_large: "./assets/reignlabs.png"

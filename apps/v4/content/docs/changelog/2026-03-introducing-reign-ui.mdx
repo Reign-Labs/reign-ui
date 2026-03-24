@@ -1,0 +1,100 @@
+---
+title: "March 24, 2026 - Introducing Reign Labs UI"
+description: "The foundation of the Reign Labs ecosystem. A modern, open-source component library built on Tailwind CSS v4, Radix UI, and Base UI."
+date: "2026-03-24"
+---
+
+We're excited to introduce **Reign Labs UI** — the foundation of the Reign Labs ecosystem. An open-source component library and code distribution platform built for modern web applications.
+
+## What is Reign Labs UI?
+
+Reign Labs UI is a collection of beautifully designed, accessible components that you add directly to your projects as source code. No black-box dependencies — you own every line of code.
+
+Built with TypeScript, Tailwind CSS v4, and your choice of primitives.
+
+## 57+ Components
+
+A complete set of UI primitives ready for production:
+
+- **Form & Input** — Button, Input, Select, Combobox, Checkbox, Radio Group, Switch, Slider, Calendar, Date Picker, Input OTP, Textarea, Field, Input Group
+- **Layout & Navigation** — Sidebar, Tabs, Accordion, Breadcrumb, Navigation Menu, Separator, Scroll Area, Resizable, Pagination
+- **Overlays** — Dialog, Sheet, Drawer, Alert Dialog, Popover, Tooltip, Hover Card, Dropdown Menu, Context Menu, Command
+- **Feedback** — Toast (Sonner), Alert, Progress, Spinner, Skeleton, Badge, Empty
+- **Data** — Table, Data Table, Chart (Recharts), Card, Avatar, Carousel
+
+## 5 Styles
+
+Choose the visual treatment that fits your project:
+
+- **Vega** — Clean, neutral, and familiar
+- **Nova** — Reduced padding and margins
+- **Maia** — Rounded, with generous spacing
+- **Lyra** — Boxy and sharp, made for mono fonts
+- **Mira** — Made for compact interfaces
+
+## 2 Primitive Bases
+
+Every component is available in two primitive libraries:
+
+- **Radix UI** — The battle-tested standard with `asChild` composition
+- **Base UI** — React's unstyled primitives with `render` prop composition
+
+## CLI
+
+Install components with a single command:
+
+```bash
+npx reignlabs-ui@latest init
+npx reignlabs-ui@latest add button card dialog
+```
+
+Create new projects from presets and templates:
+
+```bash
+npx reignlabs-ui@latest init --name my-app --preset base-nova
+npx reignlabs-ui@latest init --name my-app --preset radix-lyra --template vite
+```
+
+**Supported templates:** Next.js, Vite, React Router, Astro, TanStack Start, Laravel — all with monorepo variants.
+
+## Theming
+
+A full design token system powered by OKLCH colors and CSS custom properties:
+
+- **7 base colors** — Neutral, Zinc, Stone, Mauve, Olive, Mist, Taupe
+- **Semantic tokens** — `primary`, `secondary`, `muted`, `accent`, `destructive`, plus sidebar and chart tokens
+- **Light and dark mode** out of the box
+- **Configurable radius, fonts, and icon libraries**
+
+## Icon Libraries
+
+Bring your own icons. First-class support for:
+
+- Lucide
+- Tabler Icons
+- Hugeicons
+- Phosphor Icons
+- Remix Icon
+
+## MCP Server
+
+AI-native from day one. The built-in MCP server lets AI assistants browse, search, and install components using natural language. Works with Claude Code, Cursor, VS Code, and more.
+
+```bash
+npx reignlabs-ui@latest mcp
+```
+
+## Registry System
+
+Publish and distribute your own component registries. Share components, blocks, and themes across teams and projects.
+
+```bash
+npx reignlabs-ui@latest search @reignlabs -q "sidebar"
+npx reignlabs-ui@latest add @my-registry/custom-component
+```
+
+## Open Source
+
+Reign Labs UI is MIT licensed and open source. Built by the community, for the community.
+
+This is just the beginning. Reign Labs UI is the foundation — and we're building an entire ecosystem on top of it.
