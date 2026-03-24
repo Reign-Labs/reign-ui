@@ -18,7 +18,7 @@ import { logger } from "@/src/utils/logger"
 import { Command } from "commander"
 
 const GITHUB_RAW_BASE =
-  "https://raw.githubusercontent.com/reign-labs/reignlabs-ui/refs/heads/main/apps/v4/registry/bases"
+  "https://raw.githubusercontent.com/reign-labs/reign-ui/refs/heads/main/apps/v4/registry/bases"
 
 export const info = new Command()
   .name("info")

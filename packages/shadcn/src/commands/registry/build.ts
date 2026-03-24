@@ -58,7 +58,7 @@ async function buildRegistry(opts: z.infer<typeof buildOptionsSchema>) {
         `A ${highlighter.info(
           "components.json"
         )} file is required to build the registry. Run ${highlighter.info(
-          "reignlabs-ui init"
+          "reign-ui init"
         )} to create one.`
       )
       logger.break()

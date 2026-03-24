@@ -34,7 +34,7 @@ Select your MCP client and follow the instructions to configure the Reign Labs U
   <TabsContent value="claude" className="mt-4">
     **Run the following command** in your project:
        ```bash
-       npx reignlabs-ui@latest mcp init --client claude
+       npx reign-ui@latest mcp init --client claude
        ```
 
     **Restart Claude Code** and try the following prompts:
@@ -49,7 +49,7 @@ Select your MCP client and follow the instructions to configure the Reign Labs U
   <TabsContent value="cursor" className="mt-4">
     **Run the following command** in your project:
        ```bash
-       npx reignlabs-ui@latest mcp init --client cursor
+       npx reign-ui@latest mcp init --client cursor
        ```
 
     Open **Cursor Settings** and **Enable the MCP server** for Reign Labs UI. Then try the following prompts:
@@ -62,7 +62,7 @@ Select your MCP client and follow the instructions to configure the Reign Labs U
   <TabsContent value="vscode" className="mt-4">
     **Run the following command** in your project:
        ```bash
-       npx reignlabs-ui@latest mcp init --client vscode
+       npx reign-ui@latest mcp init --client vscode
        ```
 
     Open `.vscode/mcp.json` and click **Start** next to the Reign Labs UI server. Then try the following prompts with GitHub Copilot:
@@ -74,20 +74,20 @@ Select your MCP client and follow the instructions to configure the Reign Labs U
 
   <TabsContent value="codex" className="mt-4">
     <Callout className="mt-0">
-      **Note:** The `reignlabs-ui` CLI cannot automatically update `~/.codex/config.toml`.
+      **Note:** The `reign-ui` CLI cannot automatically update `~/.codex/config.toml`.
       You'll need to add the configuration manually for Codex.
     </Callout>
 
     **Run the following command** in your project:
        ```bash
-       npx reignlabs-ui@latest mcp init --client codex
+       npx reign-ui@latest mcp init --client codex
        ```
 
     **Then, add the following configuration** to `~/.codex/config.toml`:
        ```toml
-       [mcp_servers.reignlabs-ui]
+       [mcp_servers.reign-ui]
        command = "npx"
-       args = ["reignlabs-ui@latest", "mcp"]
+       args = ["reign-ui@latest", "mcp"]
        ```
 
     **Restart Codex** and try the following prompts:
@@ -100,7 +100,7 @@ Select your MCP client and follow the instructions to configure the Reign Labs U
   <TabsContent value="opencode" className="mt-4">
     **Run the following command** in your project:
        ```bash
-       npx reignlabs-ui@latest mcp init --client opencode
+       npx reign-ui@latest mcp init --client opencode
        ```
 
     **Restart OpenCode** and try the following prompts:
@@ -157,9 +157,9 @@ To use the Reign Labs UI MCP server with Claude Code, add the following configur
 ```json title=".mcp.json" showLineNumbers
 {
   "mcpServers": {
-    "reignlabs-ui": {
+    "reign-ui": {
       "command": "npx",
-      "args": ["reignlabs-ui@latest", "mcp"]
+      "args": ["reign-ui@latest", "mcp"]
     }
   }
 }
@@ -176,9 +176,9 @@ To configure MCP in Cursor, add the Reign Labs UI server to your project's `.cur
 ```json title=".cursor/mcp.json" showLineNumbers
 {
   "mcpServers": {
-    "reignlabs-ui": {
+    "reign-ui": {
       "command": "npx",
-      "args": ["reignlabs-ui@latest", "mcp"]
+      "args": ["reign-ui@latest", "mcp"]
     }
   }
 }
@@ -197,9 +197,9 @@ To configure MCP in VS Code with GitHub Copilot, add the Reign Labs UI server to
 ```json title=".vscode/mcp.json" showLineNumbers
 {
   "servers": {
-    "reignlabs-ui": {
+    "reign-ui": {
       "command": "npx",
-      "args": ["reignlabs-ui@latest", "mcp"]
+      "args": ["reign-ui@latest", "mcp"]
     }
   }
 }
@@ -212,16 +212,16 @@ See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/c
 ### Codex
 
 <Callout>
-  **Note:** The `reignlabs-ui` CLI cannot automatically update `~/.codex/config.toml`.
+  **Note:** The `reign-ui` CLI cannot automatically update `~/.codex/config.toml`.
   You'll need to add the configuration manually.
 </Callout>
 
 To configure MCP in Codex, add the Reign Labs UI server to `~/.codex/config.toml`:
 
 ```toml title="~/.codex/config.toml" showLineNumbers
-[mcp_servers.reignlabs-ui]
+[mcp_servers.reign-ui]
 command = "npx"
-args = ["reignlabs-ui@latest", "mcp"]
+args = ["reign-ui@latest", "mcp"]
 ```
 
 After adding the configuration, restart Codex to load the MCP server.
@@ -299,7 +299,7 @@ If the MCP server isn't responding to prompts:
 
 1. **Check Configuration** - Verify the MCP server is properly configured and enabled in your MCP client
 2. **Restart MCP Client** - Restart your MCP client after configuration changes
-3. **Verify Installation** - Ensure `reignlabs-ui` is installed in your project
+3. **Verify Installation** - Ensure `reign-ui` is installed in your project
 4. **Check Network** - Confirm you can access the configured registries
 
 ### Registry Access Issues

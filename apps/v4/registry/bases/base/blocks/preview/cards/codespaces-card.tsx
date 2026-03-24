@@ -281,7 +281,7 @@ export function CodespacesCard() {
                       </InputGroupAddon>
                       <InputGroupInput
                         id="https-url"
-                        defaultValue="https://github.com/reign-labs/reignlabs-ui.git"
+                        defaultValue="https://github.com/reign-labs/reign-ui.git"
                         readOnly
                       />
                     </InputGroup>
@@ -309,7 +309,7 @@ export function CodespacesCard() {
                       </InputGroupAddon>
                       <InputGroupInput
                         id="ssh-url"
-                        defaultValue="git@github.com:reign-labs/reignlabs-ui.git"
+                        defaultValue="git@github.com:reign-labs/reign-ui.git"
                         readOnly
                       />
                     </InputGroup>
@@ -337,7 +337,7 @@ export function CodespacesCard() {
                       </InputGroupAddon>
                       <InputGroupInput
                         id="cli-command"
-                        defaultValue="gh repo clone reign-labs/reignlabs-ui"
+                        defaultValue="gh repo clone reign-labs/reign-ui"
                         readOnly
                       />
                     </InputGroup>

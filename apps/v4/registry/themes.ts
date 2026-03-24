@@ -1,4 +1,4 @@
-import { type RegistryItem } from "reignlabs-ui/schema"
+import { type RegistryItem } from "reign-ui/schema"
 
 export const THEMES: RegistryItem[] = [
   {

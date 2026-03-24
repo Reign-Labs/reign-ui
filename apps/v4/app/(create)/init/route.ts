@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server"
 import { track } from "@vercel/analytics/server"
-import { isPresetCode } from "reignlabs-ui/preset"
-import { registryItemSchema } from "reignlabs-ui/schema"
+import { isPresetCode } from "reign-ui/preset"
+import { registryItemSchema } from "reign-ui/schema"
 
 import { buildRegistryBase } from "@/registry/config"
 import { parseDesignSystemConfig } from "@/app/(create)/init/parse-config"

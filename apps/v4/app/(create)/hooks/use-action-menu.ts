@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { type RegistryItem } from "reignlabs-ui/schema"
+import { type RegistryItem } from "reign-ui/schema"
 import useSWR from "swr"
 
 import { useDesignSystemSearchParams } from "@/app/(create)/lib/search-params"

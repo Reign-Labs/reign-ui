@@ -11,7 +11,7 @@ import {
   type inferParserType,
   type Options,
 } from "nuqs/server"
-import { decodePreset, isPresetCode } from "reignlabs-ui/preset"
+import { decodePreset, isPresetCode } from "reign-ui/preset"
 
 import {
   BASE_COLORS,

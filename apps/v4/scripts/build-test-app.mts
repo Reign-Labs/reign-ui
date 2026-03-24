@@ -5,7 +5,7 @@
  * from the Reign Labs UI registry for testing different style configurations.
  *
  * Prerequisites:
- *   1. Clone the test apps repo: git clone https://github.com/reign-labs/reignlabs-ui-test-apps
+ *   1. Clone the test apps repo: git clone https://github.com/reign-labs/reign-ui-test-apps
  *   2. Place it at ../../../ui-test-apps (relative to apps/v4) or set TEST_APPS_PATH
  *
  * Usage:
@@ -40,12 +40,12 @@
 import { promises as fs } from "fs"
 import path from "path"
 import { rimraf } from "rimraf"
-import { registrySchema } from "reignlabs-ui/schema"
+import { registrySchema } from "reign-ui/schema"
 import {
   createStyleMap,
   transformIcons,
   transformStyle,
-} from "reignlabs-ui/utils"
+} from "reign-ui/utils"
 import { Project, ScriptKind } from "ts-morph"
 
 import { BASES, type Base } from "@/registry/bases"
@@ -186,7 +186,7 @@ try {
       // Apply style transformation.
       content = await transformStyle(content, { styleMap })
 
-      // Transform icons using reignlabs-ui transformer.
+      // Transform icons using reign-ui transformer.
       content = await applyIconTransform(content, exampleFile)
 
       // Rewrite imports.
@@ -233,7 +233,7 @@ try {
       // Apply style transformation.
       content = await transformStyle(content, { styleMap })
 
-      // Transform icons using reignlabs-ui transformer.
+      // Transform icons using reign-ui transformer.
       content = await applyIconTransform(content, blockFile)
 
       // Rewrite imports.

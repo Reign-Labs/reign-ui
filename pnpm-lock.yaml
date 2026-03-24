@@ -271,7 +271,7 @@ importers:
       rehype-pretty-code:
         specifier: ^0.14.1
         version: 0.14.1(shiki@1.29.2)
-      reignlabs-ui:
+      reign-ui:
         specifier: 4.1.0
         version: link:../../packages/shadcn
       rimraf:
@@ -492,7 +492,7 @@ importers:
 
   packages/tests:
     dependencies:
-      reignlabs-ui:
+      reign-ui:
         specifier: workspace:*
         version: link:../shadcn
     devDependencies:

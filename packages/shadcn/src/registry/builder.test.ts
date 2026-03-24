@@ -299,14 +299,14 @@ describe("buildHeadersFromRegistryConfig", () => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        "User-Agent": "reignlabs-ui/1.0.0",
+        "User-Agent": "reign-ui/1.0.0",
       },
     }
 
     expect(buildHeadersFromRegistryConfig(config)).toEqual({
       "Content-Type": "application/json",
       Accept: "application/json",
-      "User-Agent": "reignlabs-ui/1.0.0",
+      "User-Agent": "reign-ui/1.0.0",
     })
   })
 

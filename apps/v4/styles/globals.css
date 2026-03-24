@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "reignlabs-ui/tailwind.css";
+@import "reign-ui/tailwind.css";
 @import "./legacy-themes.css";
 
 @import "../registry/styles/style-vega.css" layer(base);

@@ -1,6 +1,6 @@
 "use client"
 
-import { type IconLibraryName } from "reignlabs-ui/icons"
+import { type IconLibraryName } from "reign-ui/icons"
 
 import { Card, CardContent } from "@/registry/bases/radix/ui/card"
 import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"

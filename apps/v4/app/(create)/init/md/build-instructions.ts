@@ -94,7 +94,7 @@ function buildCssSection(
     \`\`\`css
     @import "tailwindcss";
     @import "tw-animate-css";
-    @import "reignlabs-ui/tailwind.css";
+    @import "reign-ui/tailwind.css";
 
     @theme inline {
       --font-sans: var(--font-sans);

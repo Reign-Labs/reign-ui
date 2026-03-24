@@ -1,5 +1,5 @@
 // Browser-safe re-export of preset utilities.
-// Use `reignlabs-ui/preset` for client-side code.
+// Use `reign-ui/preset` for client-side code.
 export {
   PRESET_BASES,
   PRESET_STYLES,

@@ -17,7 +17,7 @@ import {
   SidebarMenuItem,
 } from "@/examples/base/ui/sidebar"
 import { ChevronRightIcon } from "lucide-react"
-import { type RegistryItem } from "reignlabs-ui/schema"
+import { type RegistryItem } from "reign-ui/schema"
 
 import { cn } from "@/lib/utils"
 import { type Base } from "@/registry/bases"

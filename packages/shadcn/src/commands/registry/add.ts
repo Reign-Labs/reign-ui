@@ -79,7 +79,7 @@ async function addRegistriesToConfig(
   if (!fs.existsSync(configPath)) {
     throw new Error(
       `No ${highlighter.info("components.json")} found. Run ${highlighter.info(
-        "reignlabs-ui init"
+        "reign-ui init"
       )} first.`
     )
   }

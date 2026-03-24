@@ -65,14 +65,14 @@ import { ThemeProvider } from "next-themes"
 
 ```bash
 # Apply a preset code from ui.reign-labs.com.
-npx reignlabs-ui@latest init --preset a2r6bw --force
+npx reign-ui@latest init --preset a2r6bw --force
 
 # Switch to a named preset.
-npx reignlabs-ui@latest init --preset radix-nova --force
-npx reignlabs-ui@latest init --reinstall  # update existing components to match
+npx reign-ui@latest init --preset radix-nova --force
+npx reign-ui@latest init --reinstall  # update existing components to match
 
 # Use a custom theme URL.
-npx reignlabs-ui@latest init --preset "https://ui.reign-labs.com/init?base=radix&style=nova&theme=blue&..." --force
+npx reign-ui@latest init --preset "https://ui.reign-labs.com/init?base=radix&style=nova&theme=blue&..." --force
 ```
 
 Or edit CSS variables directly in `globals.css`.
@@ -81,7 +81,7 @@ Or edit CSS variables directly in `globals.css`.
 
 ## Adding Custom Colors
 
-Add variables to the file at `tailwindCssFile` from `npx reignlabs-ui@latest info` (typically `globals.css`). Never create a new CSS file for this.
+Add variables to the file at `tailwindCssFile` from `npx reign-ui@latest info` (typically `globals.css`). Never create a new CSS file for this.
 
 ```css
 /* 1. Define in the global CSS file. */
@@ -103,7 +103,7 @@ Add variables to the file at `tailwindCssFile` from `npx reignlabs-ui@latest inf
 }
 ```
 
-When `tailwindVersion` is `"v3"` (check via `npx reignlabs-ui@latest info`), register in `tailwind.config.js` instead:
+When `tailwindVersion` is `"v3"` (check via `npx reign-ui@latest info`), register in `tailwind.config.js` instead:
 
 ```js
 // 2b. Register with Tailwind v3 (tailwind.config.js).
@@ -189,14 +189,14 @@ export function ConfirmDialog({ title, description, onConfirm, children }) {
 ## Checking for Updates
 
 ```bash
-npx reignlabs-ui@latest add button --diff
+npx reign-ui@latest add button --diff
 ```
 
 To preview exactly what would change before updating, use `--dry-run` and `--diff`:
 
 ```bash
-npx reignlabs-ui@latest add button --dry-run        # see all affected files
-npx reignlabs-ui@latest add button --diff button.tsx # see the diff for a specific file
+npx reign-ui@latest add button --dry-run        # see all affected files
+npx reign-ui@latest add button --diff button.tsx # see the diff for a specific file
 ```
 
 See [Updating Components in SKILL.md](./SKILL.md#updating-components) for the full smart merge workflow.

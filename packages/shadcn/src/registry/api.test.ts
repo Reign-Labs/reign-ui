@@ -109,7 +109,7 @@ const server = setupServer(
       {
         name: "@reignlabs",
         url: "https://ui.reign-labs.com/r/styles/{style}/{name}.json",
-        description: "The official reignlabs-ui registry.",
+        description: "The official reign-ui registry.",
       },
       {
         name: "@example",
@@ -1686,7 +1686,7 @@ describe("getRegistriesConfig", () => {
         {
           name: "@reignlabs",
           url: "https://ui.reign-labs.com/r/styles/{style}/{name}.json",
-          description: "The official reignlabs-ui registry.",
+          description: "The official reign-ui registry.",
         },
         {
           name: "@example",

@@ -2,7 +2,7 @@ import {
   iconLibraries,
   type IconLibrary,
   type IconLibraryName,
-} from "reignlabs-ui/icons"
+} from "reign-ui/icons"
 import { z } from "zod"
 
 import { BASE_COLORS, type BaseColor } from "@/registry/base-colors"
@@ -480,7 +480,7 @@ export function buildRegistryBase(config: DesignSystemConfig) {
 
   // Build dependencies.
   const dependencies = [
-    `reignlabs-ui@${REIGNLABS_VERSION}`,
+    `reign-ui@${REIGNLABS_VERSION}`,
     "class-variance-authority",
     "tw-animate-css",
     ...(baseItem.dependencies ?? []),
@@ -525,7 +525,7 @@ export function buildRegistryBase(config: DesignSystemConfig) {
     },
     css: {
       '@import "tw-animate-css"': {},
-      '@import "reignlabs-ui/tailwind.css"': {},
+      '@import "reign-ui/tailwind.css"': {},
       "@layer base": {
         "*": { "@apply border-border outline-ring/50": {} },
         body: { "@apply bg-background text-foreground": {} },

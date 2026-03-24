@@ -18,7 +18,7 @@ Create a new project using the `--rtl` flag and the `vite` template.
 **You can skip this step if you have already created a project using [Reign Labs UI/create](/create?template=vite&base=base&rtl=true).**
 
 ```bash
-npx reignlabs-ui@latest create --template vite --rtl
+npx reign-ui@latest create --template vite --rtl
 ```
 
 This will create a `components.json` file with the `rtl: true` flag.
@@ -86,7 +86,7 @@ Import the font in your `index.css`:
 ```css title="src/index.css" showLineNumbers {4,7}
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "reignlabs-ui/tailwind.css";
+@import "reign-ui/tailwind.css";
 @import "@fontsource-variable/noto-sans-arabic";
 
 @theme inline {
@@ -101,7 +101,7 @@ For other languages, eg. Hebrew, you can use `@fontsource-variable/noto-sans-heb
 You are now ready to add components to your project. The CLI will take care of handling RTL support for you.
 
 ```bash
-npx reignlabs-ui@latest add item
+npx reign-ui@latest add item
 ```
 
 </Steps>

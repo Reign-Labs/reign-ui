@@ -7,7 +7,7 @@ This is a template for a new React Router project with React, TypeScript, and Re
 To add components to your app, run the following command:
 
 ```bash
-npx reignlabs-ui@latest add button
+npx reign-ui@latest add button
 ```
 
 This will place the ui components in the `components` directory.

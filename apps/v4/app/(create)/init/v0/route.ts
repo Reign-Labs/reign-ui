@@ -1,6 +1,6 @@
 import { after, NextResponse, type NextRequest } from "next/server"
 import { track } from "@vercel/analytics/server"
-import { isPresetCode } from "reignlabs-ui/preset"
+import { isPresetCode } from "reign-ui/preset"
 
 import { parseDesignSystemConfig } from "@/app/(create)/init/parse-config"
 import { getPresetCode } from "@/app/(create)/lib/preset-code"

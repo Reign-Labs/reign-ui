@@ -19,7 +19,7 @@ process.on("SIGTERM", () => process.exit(0))
 
 async function main() {
   const program = new Command()
-    .name("reignlabs-ui")
+    .name("reign-ui")
     .description("build your component library")
     .version(
       packageJson.version || "1.0.0",

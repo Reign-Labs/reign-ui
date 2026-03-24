@@ -1,4 +1,4 @@
-import { registryItemSchema, type Registry } from "reignlabs-ui/schema"
+import { registryItemSchema, type Registry } from "reign-ui/schema"
 import { z } from "zod"
 
 import { fonts } from "@/registry/fonts"
@@ -15,11 +15,11 @@ import { ui } from "./ui/_registry"
 const RADIX_STYLE = {
   type: "registry:style",
   dependencies: ["class-variance-authority", "lucide-react", "radix-ui"],
-  devDependencies: ["tw-animate-css", "reignlabs-ui"],
+  devDependencies: ["tw-animate-css", "reign-ui"],
   registryDependencies: ["utils"],
   css: {
     '@import "tw-animate-css"': {},
-    '@import "reignlabs-ui/tailwind.css"': {},
+    '@import "reign-ui/tailwind.css"': {},
     "@layer base": {
       "*": {
         "@apply border-border outline-ring/50": {},
@@ -34,7 +34,7 @@ const RADIX_STYLE = {
 }
 
 export const registry = {
-  name: "reignlabs-ui/ui",
+  name: "reign-ui/ui",
   homepage: "https://ui.reign-labs.com",
   items: z.array(registryItemSchema).parse([
     {

@@ -35,7 +35,7 @@ The skill provides your AI assistant with the following knowledge:
 
 ### Project Context
 
-On every interaction, the skill runs `reignlabs-ui info --json` to get your project's configuration: framework, Tailwind version, aliases, base library (`radix` or `base`), icon library, installed components, and resolved file paths.
+On every interaction, the skill runs `reign-ui info --json` to get your project's configuration: framework, Tailwind version, aliases, base library (`radix` or `base`), icon library, installed components, and resolved file paths.
 
 ### CLI Commands
 
@@ -58,9 +58,9 @@ Setup and tools for the Reign Labs UI MCP server, which lets AI assistants searc
 ## How It Works
 
 1. **Project detection** — The skill activates when it finds a `components.json` file in your project.
-2. **Context injection** — It runs `reignlabs-ui info --json` to read your project configuration and injects the result into the assistant's context.
+2. **Context injection** — It runs `reign-ui info --json` to read your project configuration and injects the result into the assistant's context.
 3. **Pattern enforcement** — The assistant follows Reign Labs UI composition rules: using `FieldGroup` for forms, `ToggleGroup` for option sets, semantic colors, and correct base-specific APIs.
-4. **Component discovery** — The assistant uses `reignlabs-ui docs`, `reignlabs-ui search`, or MCP tools to find components and their documentation before generating code.
+4. **Component discovery** — The assistant uses `reign-ui docs`, `reign-ui search`, or MCP tools to find components and their documentation before generating code.
 
 ## Learn More
 

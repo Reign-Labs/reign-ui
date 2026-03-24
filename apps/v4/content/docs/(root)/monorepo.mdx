@@ -23,7 +23,7 @@ for you.
 To create a new monorepo project, run the `init` command with the `--monorepo` flag.
 
 ```bash
-npx reignlabs-ui@latest init --monorepo
+npx reign-ui@latest init --monorepo
 ```
 
 Then select the template you want to use.
@@ -51,15 +51,15 @@ cd apps/web
 ```
 
 ```bash
-npx reignlabs-ui@latest add [COMPONENT]
+npx reign-ui@latest add [COMPONENT]
 ```
 
 The CLI will figure out what type of component you are adding and install the
 correct files to the correct path.
 
-For example, if you run `npx reignlabs-ui@latest add button`, the CLI will install the button component under `packages/ui` and update the import path for components in `apps/web`.
+For example, if you run `npx reign-ui@latest add button`, the CLI will install the button component under `packages/ui` and update the import path for components in `apps/web`.
 
-If you run `npx reignlabs-ui@latest add login-01`, the CLI will install the `button`, `label`, `input` and `card` components under `packages/ui` and the `login-form` component under `apps/web/components`.
+If you run `npx reign-ui@latest add login-01`, the CLI will install the `button`, `label`, `input` and `card` components under `packages/ui` and the `login-form` component under `apps/web/components`.
 
 ### Importing components
 

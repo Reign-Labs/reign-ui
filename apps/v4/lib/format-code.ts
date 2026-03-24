@@ -6,7 +6,7 @@ import {
   transformMenu,
   transformRender,
   transformStyle,
-} from "reignlabs-ui/utils"
+} from "reign-ui/utils"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 
 import { BASES } from "@/registry/bases"

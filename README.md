@@ -13,7 +13,7 @@ Components are added as source code to your project — no black-box dependencie
 - **2 primitive bases** — Radix UI or Base UI — pick what fits your project
 - **Theming** — OKLCH color system, semantic tokens, light/dark mode, configurable radius and fonts
 - **Icon libraries** — Lucide, Tabler, Hugeicons, Phosphor, Remix Icon
-- **CLI** — Add components with `npx reignlabs-ui@latest add button card dialog`
+- **CLI** — Add components with `npx reign-ui@latest add button card dialog`
 - **MCP server** — AI-native component browsing, search, and installation
 - **Registry system** — Publish and share your own component registries
 - **Templates** — Next.js, Vite, React Router, Astro, TanStack Start, Laravel (+ monorepo variants)
@@ -23,13 +23,13 @@ Components are added as source code to your project — no black-box dependencie
 
 ```bash
 # Create a new project
-npx reignlabs-ui@latest init --name my-app --preset base-nova
+npx reign-ui@latest init --name my-app --preset base-nova
 
 # Or initialize an existing project
-npx reignlabs-ui@latest init
+npx reign-ui@latest init
 
 # Add components
-npx reignlabs-ui@latest add button card dialog sidebar
+npx reign-ui@latest add button card dialog sidebar
 ```
 
 ## The Reign Labs Ecosystem

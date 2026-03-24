@@ -18,7 +18,7 @@ export const buildOptionsSchema = z.object({
 
 export const build = new Command()
   .name("build")
-  .description("build components for a reignlabs-ui registry")
+  .description("build components for a reign-ui registry")
   .argument("[registry]", "path to registry.json file", "./registry.json")
   .option(
     "-o, --output <path>",

@@ -1,4 +1,4 @@
-import { V1_CHART_COLOR_MAP, type PresetConfig } from "reignlabs-ui/preset"
+import { V1_CHART_COLOR_MAP, type PresetConfig } from "reign-ui/preset"
 
 import { type ChartColorName, type FontHeadingValue } from "@/registry/config"
 

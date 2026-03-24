@@ -1,6 +1,6 @@
 # Base vs Radix
 
-API differences between `base` and `radix`. Check the `base` field from `npx reignlabs-ui@latest info`.
+API differences between `base` and `radix`. Check the `base` field from `npx reign-ui@latest info`.
 
 ## Contents
 

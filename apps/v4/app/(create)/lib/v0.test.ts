@@ -3,12 +3,12 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import { DEFAULT_CONFIG } from "@/registry/config"
 import { buildV0Payload } from "@/app/(create)/lib/v0"
 
-vi.mock("reignlabs-ui/schema", async () => {
-  return await vi.importActual("reignlabs-ui/schema")
+vi.mock("reign-ui/schema", async () => {
+  return await vi.importActual("reign-ui/schema")
 })
 
-vi.mock("reignlabs-ui/utils", async () => {
-  const actual = (await vi.importActual("reignlabs-ui/utils")) as {
+vi.mock("reign-ui/utils", async () => {
+  const actual = (await vi.importActual("reign-ui/utils")) as {
     transformFont: unknown
   }
 

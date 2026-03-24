@@ -1010,7 +1010,7 @@ describe("registries", () => {
       const fixturePath = await createFixtureTestDirectory("next-app-init")
 
       await configureRegistries(fixturePath, {
-        "@reignlabs-ui": "http://localhost:4444/r/{name}",
+        "@reign-ui": "http://localhost:4444/r/{name}",
         "@myreignlabs": "http://localhost:4444/r/{name}",
         "@reignlabstest": "http://localhost:4444/r/{name}",
       })
@@ -1019,7 +1019,7 @@ describe("registries", () => {
       const output = await npxReignlabs(fixturePath, ["info"])
 
       // Should not error - check that registries are shown
-      expect(output.stdout).toContain("@reignlabs-ui")
+      expect(output.stdout).toContain("@reign-ui")
       expect(output.stdout).toContain("@myreignlabs")
       expect(output.stdout).toContain("@reignlabstest")
       expect(output.stdout).not.toContain("built-in registry")

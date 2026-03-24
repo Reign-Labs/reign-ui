@@ -84,7 +84,7 @@ describe("defaultScaffold", () => {
       "1",
       "--filter=blob:none",
       "--sparse",
-      "https://github.com/reign-labs/reignlabs-ui.git",
+      "https://github.com/reign-labs/reign-ui.git",
       expect.stringContaining("reignlabs-template-"),
     ])
 

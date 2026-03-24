@@ -46,7 +46,7 @@ export const docs = new Command()
           logger.error(
             `Component ${highlighter.info(
               component
-            )} not found in the reignlabs-ui registry.`
+            )} not found in the reign-ui registry.`
           )
           process.exit(1)
         }

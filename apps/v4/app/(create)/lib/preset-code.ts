@@ -1,4 +1,4 @@
-import { encodePreset, type PresetConfig } from "reignlabs-ui/preset"
+import { encodePreset, type PresetConfig } from "reign-ui/preset"
 
 import { type DesignSystemConfig } from "@/registry/config"
 

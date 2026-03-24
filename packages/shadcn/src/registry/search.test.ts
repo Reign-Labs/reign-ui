@@ -15,7 +15,7 @@ describe("searchRegistries", () => {
     mockGetRegistry.mockImplementation(async (name: string) => {
       if (name === "@reignlabs" || name === "@reignlabs/registry") {
         return {
-          name: "reignlabs-ui",
+          name: "reign-ui",
           homepage: "https://ui.reign-labs.com",
           items: [
             {
@@ -94,7 +94,7 @@ describe("searchRegistries", () => {
     mockGetRegistry.mockImplementation(async (name: string) => {
       if (name === "@reignlabs" || name === "@reignlabs/registry") {
         return {
-          name: "reignlabs-ui",
+          name: "reign-ui",
           homepage: "https://ui.reign-labs.com",
           items: [
             {
@@ -474,7 +474,7 @@ describe("searchRegistries", () => {
     mockGetRegistry.mockImplementation(async (nameOrUrl: string) => {
       if (nameOrUrl === "@reignlabs" || nameOrUrl === "@reignlabs/registry") {
         return {
-          name: "reignlabs-ui",
+          name: "reign-ui",
           homepage: "https://ui.reign-labs.com",
           items: [
             {

@@ -180,7 +180,7 @@ afterAll(async () => {
   await registryLarge.stop()
 })
 
-describe("reignlabs-ui search", () => {
+describe("reign-ui search", () => {
   it("should search items from reignlabs registry", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app-init")
     await configureRegistries(fixturePath, {

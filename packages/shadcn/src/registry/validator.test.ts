@@ -70,7 +70,7 @@ describe("validateRegistryConfig", () => {
 
     it("should not throw for similar but different registry names", () => {
       expect(() => {
-        validateRegistryConfig("@reignlabs-ui", {
+        validateRegistryConfig("@reign-ui", {
           url: "https://example.com/{name}",
         })
       }).not.toThrow()

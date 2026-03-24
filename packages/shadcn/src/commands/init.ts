@@ -325,7 +325,7 @@ export const init = new Command()
           logger.log(
             `  Please create a new app with ${highlighter.info(
               "laravel new --react"
-            )} first then run ${highlighter.info("reignlabs-ui init")}.`
+            )} first then run ${highlighter.info("reign-ui init")}.`
           )
           logger.log(
             `  See ${highlighter.info(

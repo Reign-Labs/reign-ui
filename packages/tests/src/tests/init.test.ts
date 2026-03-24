@@ -10,7 +10,7 @@ import {
 } from "../utils/helpers"
 import { createRegistryServer } from "../utils/registry"
 
-describe("reignlabs-ui init - next-app", () => {
+describe("reign-ui init - next-app", () => {
   it("should init with default configuration", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app")
     await npxReignlabs(fixturePath, ["init", "--defaults"])
@@ -72,7 +72,7 @@ describe("reignlabs-ui init - next-app", () => {
   })
 })
 
-describe("reignlabs-ui init - vite-app", () => {
+describe("reign-ui init - vite-app", () => {
   it("should init with custom alias and src", async () => {
     const fixturePath = await createFixtureTestDirectory("vite-app")
     await npxReignlabs(fixturePath, ["init", "--defaults", "alert-dialog"])
@@ -115,7 +115,7 @@ describe("reignlabs-ui init - vite-app", () => {
   })
 })
 
-describe("reignlabs-ui init - custom style", async () => {
+describe("reign-ui init - custom style", async () => {
   const customRegistry = await createRegistryServer(
     [
       {
@@ -390,7 +390,7 @@ describe("reignlabs-ui init - custom style", async () => {
   })
 })
 
-describe("reignlabs-ui init - unsupported framework", () => {
+describe("reign-ui init - unsupported framework", () => {
   it("should init with --defaults on unsupported framework", async () => {
     const fixturePath = await createFixtureTestDirectory("remix-app")
     await npxReignlabs(fixturePath, ["init", "--defaults"])
@@ -428,7 +428,7 @@ describe("reignlabs-ui init - unsupported framework", () => {
   })
 })
 
-describe("reignlabs-ui init - template flag", () => {
+describe("reign-ui init - template flag", () => {
   it("should reject invalid template", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app")
     const result = await npxReignlabs(fixturePath, ["init", "-t", "invalid"])
@@ -450,7 +450,7 @@ describe("reignlabs-ui init - template flag", () => {
   })
 })
 
-describe("reignlabs-ui init - --name flag", () => {
+describe("reign-ui init - --name flag", () => {
   // Use os.tmpdir() to create projects outside the monorepo tree.
   // This prevents pnpm from detecting the monorepo workspace root.
   let testBaseDir: string
@@ -518,7 +518,7 @@ describe("reignlabs-ui init - --name flag", () => {
   })
 })
 
-describe("reignlabs-ui init - next-monorepo", () => {
+describe("reign-ui init - next-monorepo", () => {
   // Use os.tmpdir() to create projects outside the monorepo tree.
   // This prevents pnpm from detecting the monorepo workspace root.
   let testBaseDir: string
@@ -655,7 +655,7 @@ describe("reignlabs-ui init - next-monorepo", () => {
   }, 300000)
 })
 
-describe("reignlabs-ui init - rtl flags", () => {
+describe("reign-ui init - rtl flags", () => {
   it("should set rtl to true with --rtl", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app")
     await npxReignlabs(fixturePath, ["init", "--defaults", "--rtl"])
@@ -684,7 +684,7 @@ describe("reignlabs-ui init - rtl flags", () => {
   })
 })
 
-describe("reignlabs-ui init - deprecated --src-dir", () => {
+describe("reign-ui init - deprecated --src-dir", () => {
   it("should reject --src-dir as unknown option", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app")
     const result = await npxReignlabs(fixturePath, [
@@ -697,7 +697,7 @@ describe("reignlabs-ui init - deprecated --src-dir", () => {
   })
 })
 
-describe("reignlabs-ui init - existing components.json", () => {
+describe("reign-ui init - existing components.json", () => {
   // TODO: Revisit --force behavior. Currently it only skips backup merge,
   // but doesn't reset config values like style. Need to decide intended behavior.
   it.skip("should override existing components.json when using --force", async () => {

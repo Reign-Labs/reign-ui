@@ -12,7 +12,7 @@ This is a monorepo template for Astro with React, TypeScript, and Reign Labs UI.
 To add components, run the following command from the root:
 
 ```bash
-npx reignlabs-ui@latest add button -c apps/web
+npx reign-ui@latest add button -c apps/web
 ```
 
 ## Using components

@@ -169,7 +169,7 @@ afterAll(async () => {
   await registryTwo.stop()
 })
 
-describe("reignlabs-ui view", () => {
+describe("reign-ui view", () => {
   it("should view a single component from reignlabs registry", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app-init")
     await configureRegistries(fixturePath, {

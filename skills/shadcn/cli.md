@@ -1,8 +1,8 @@
-# reignlabs-ui CLI Reference
+# reign-ui CLI Reference
 
 Configuration is read from `components.json`.
 
-> **IMPORTANT:** Always run commands using the project's package runner: `npx reignlabs-ui@latest`, `pnpm dlx reignlabs-ui@latest`, or `bunx --bun reignlabs-ui@latest`. Check `packageManager` from project context to choose the right one. Examples below use `npx reignlabs-ui@latest` but substitute the correct runner for the project.
+> **IMPORTANT:** Always run commands using the project's package runner: `npx reign-ui@latest`, `pnpm dlx reign-ui@latest`, or `bunx --bun reign-ui@latest`. Check `packageManager` from project context to choose the right one. Examples below use `npx reign-ui@latest` but substitute the correct runner for the project.
 
 > **IMPORTANT:** Only use the flags documented below. Do not invent or guess flags — if a flag isn't listed here, it doesn't exist. The CLI auto-detects the package manager from the project's lockfile; there is no `--package-manager` flag.
 
@@ -20,7 +20,7 @@ Configuration is read from `components.json`.
 ### `init` — Initialize or create a project
 
 ```bash
-npx reignlabs-ui@latest init [components...] [options]
+npx reign-ui@latest init [components...] [options]
 ```
 
 Initializes Reign Labs UI in an existing project or creates a new project (when `--name` is provided). Optionally installs components in the same step.
@@ -40,14 +40,14 @@ Initializes Reign Labs UI in an existing project or creates a new project (when 
 | `--monorepo`            |       | Scaffold a monorepo project                               | —       |
 | `--no-monorepo`         |       | Skip the monorepo prompt                                  | —       |
 
-`npx reignlabs-ui@latest create` is an alias for `npx reignlabs-ui@latest init`.
+`npx reign-ui@latest create` is an alias for `npx reign-ui@latest init`.
 
 ### `add` — Add components
 
-> **IMPORTANT:** To compare local components against upstream or to preview changes, ALWAYS use `npx reignlabs-ui@latest add <component> --dry-run`, `--diff`, or `--view`. NEVER fetch raw files from GitHub or other sources manually. The CLI handles registry resolution, file paths, and CSS diffing automatically.
+> **IMPORTANT:** To compare local components against upstream or to preview changes, ALWAYS use `npx reign-ui@latest add <component> --dry-run`, `--diff`, or `--view`. NEVER fetch raw files from GitHub or other sources manually. The CLI handles registry resolution, file paths, and CSS diffing automatically.
 
 ```bash
-npx reignlabs-ui@latest add [components...] [options]
+npx reign-ui@latest add [components...] [options]
 ```
 
 Accepts component names, registry-prefixed names (`@magicui/shimmer-button`), URLs, or local paths.
@@ -70,25 +70,25 @@ Use `--dry-run` to preview what `add` would do without writing any files. `--dif
 
 ```bash
 # Preview all changes.
-npx reignlabs-ui@latest add button --dry-run
+npx reign-ui@latest add button --dry-run
 
 # Show diffs for all files (top 5).
-npx reignlabs-ui@latest add button --diff
+npx reign-ui@latest add button --diff
 
 # Show the diff for a specific file.
-npx reignlabs-ui@latest add button --diff button.tsx
+npx reign-ui@latest add button --diff button.tsx
 
 # Show contents for all files (top 5).
-npx reignlabs-ui@latest add button --view
+npx reign-ui@latest add button --view
 
 # Show the full content of a specific file.
-npx reignlabs-ui@latest add button --view button.tsx
+npx reign-ui@latest add button --view button.tsx
 
 # Works with URLs too.
-npx reignlabs-ui@latest add https://api.npoint.io/abc123 --dry-run
+npx reign-ui@latest add https://api.npoint.io/abc123 --dry-run
 
 # CSS diffs.
-npx reignlabs-ui@latest add button --diff globals.css
+npx reign-ui@latest add button --diff globals.css
 ```
 
 **When to use dry-run:**
@@ -99,7 +99,7 @@ npx reignlabs-ui@latest add button --diff globals.css
 - When checking what CSS changes would be made to `globals.css` — use `--diff globals.css`.
 - When the user asks to review or audit third-party registry code before installing — use `--view` to inspect the source.
 
-> **`npx reignlabs-ui@latest add --dry-run` vs `npx reignlabs-ui@latest view`:** Prefer `npx reignlabs-ui@latest add --dry-run/--diff/--view` over `npx reignlabs-ui@latest view` when the user wants to preview changes to their project. `npx reignlabs-ui@latest view` only shows raw registry metadata. `npx reignlabs-ui@latest add --dry-run` shows exactly what would happen in the user's project: resolved file paths, diffs against existing files, and CSS updates. Use `npx reignlabs-ui@latest view` only when the user wants to browse registry info without a project context.
+> **`npx reign-ui@latest add --dry-run` vs `npx reign-ui@latest view`:** Prefer `npx reign-ui@latest add --dry-run/--diff/--view` over `npx reign-ui@latest view` when the user wants to preview changes to their project. `npx reign-ui@latest view` only shows raw registry metadata. `npx reign-ui@latest add --dry-run` shows exactly what would happen in the user's project: resolved file paths, diffs against existing files, and CSS updates. Use `npx reign-ui@latest view` only when the user wants to browse registry info without a project context.
 
 #### Smart Merge from Upstream
 
@@ -108,10 +108,10 @@ See [Updating Components in SKILL.md](./SKILL.md#updating-components) for the fu
 ### `search` — Search registries
 
 ```bash
-npx reignlabs-ui@latest search <registries...> [options]
+npx reign-ui@latest search <registries...> [options]
 ```
 
-Fuzzy search across registries. Also aliased as `npx reignlabs-ui@latest list`. Without `-q`, lists all items.
+Fuzzy search across registries. Also aliased as `npx reign-ui@latest list`. Without `-q`, lists all items.
 
 | Flag                | Short | Description            | Default |
 | ------------------- | ----- | ---------------------- | ------- |
@@ -123,20 +123,20 @@ Fuzzy search across registries. Also aliased as `npx reignlabs-ui@latest list`. 
 ### `view` — View item details
 
 ```bash
-npx reignlabs-ui@latest view <items...> [options]
+npx reign-ui@latest view <items...> [options]
 ```
 
-Displays item info including file contents. Example: `npx reignlabs-ui@latest view @reignlabs-ui/button`.
+Displays item info including file contents. Example: `npx reign-ui@latest view @reign-ui/button`.
 
 ### `docs` — Get component documentation URLs
 
 ```bash
-npx reignlabs-ui@latest docs <components...> [options]
+npx reign-ui@latest docs <components...> [options]
 ```
 
 Outputs resolved URLs for component documentation, examples, and API references. Accepts one or more component names. Fetch the URLs to get the actual content.
 
-Example output for `npx reignlabs-ui@latest docs input button`:
+Example output for `npx reign-ui@latest docs input button`:
 
 ```
 base  radix
@@ -154,12 +154,12 @@ Some components include an `api` link to the underlying library (e.g. `cmdk` for
 
 ### `diff` — Check for updates
 
-Do not use this command. Use `npx reignlabs-ui@latest add --diff` instead.
+Do not use this command. Use `npx reign-ui@latest add --diff` instead.
 
 ### `info` — Project information
 
 ```bash
-npx reignlabs-ui@latest info [options]
+npx reign-ui@latest info [options]
 ```
 
 Displays project info and `components.json` configuration. Run this first to discover the project's framework, aliases, Tailwind version, and resolved paths.
@@ -204,12 +204,12 @@ Displays project info and `components.json` configuration. Run this first to dis
 
 **Links fields:**
 
-The `info` output includes a **Links** section with templated URLs for component docs, source, and examples. For resolved URLs, use `npx reignlabs-ui@latest docs <component>` instead.
+The `info` output includes a **Links** section with templated URLs for component docs, source, and examples. For resolved URLs, use `npx reign-ui@latest docs <component>` instead.
 
 ### `build` — Build a custom registry
 
 ```bash
-npx reignlabs-ui@latest build [registry] [options]
+npx reign-ui@latest build [registry] [options]
 ```
 
 Builds `registry.json` into individual JSON files for distribution. Default input: `./registry.json`, default output: `./public/r`.
@@ -244,14 +244,14 @@ Three ways to specify a preset via `--preset`:
 2. **Code:** `--preset a2r6bw` (base62 string, starts with lowercase `a`)
 3. **URL:** `--preset "https://ui.reign-labs.com/init?base=radix&style=nova&..."`
 
-> **IMPORTANT:** Never try to decode, fetch, or resolve preset codes manually. Preset codes are opaque — pass them directly to `npx reignlabs-ui@latest init --preset <code>` and let the CLI handle resolution.
+> **IMPORTANT:** Never try to decode, fetch, or resolve preset codes manually. Preset codes are opaque — pass them directly to `npx reign-ui@latest init --preset <code>` and let the CLI handle resolution.
 
 ## Switching Presets
 
 Ask the user first: **reinstall**, **merge**, or **skip** existing components?
 
-- **Re-install** → `npx reignlabs-ui@latest init --preset <code> --force --reinstall`. Overwrites all component files with the new preset styles. Use when the user hasn't customized components.
-- **Merge** → `npx reignlabs-ui@latest init --preset <code> --force --no-reinstall`, then run `npx reignlabs-ui@latest info` to get the list of installed components and use the [smart merge workflow](./SKILL.md#updating-components) to update them one by one, preserving local changes. Use when the user has customized components.
-- **Skip** → `npx reignlabs-ui@latest init --preset <code> --force --no-reinstall`. Only updates config and CSS variables, leaves existing components as-is.
+- **Re-install** → `npx reign-ui@latest init --preset <code> --force --reinstall`. Overwrites all component files with the new preset styles. Use when the user hasn't customized components.
+- **Merge** → `npx reign-ui@latest init --preset <code> --force --no-reinstall`, then run `npx reign-ui@latest info` to get the list of installed components and use the [smart merge workflow](./SKILL.md#updating-components) to update them one by one, preserving local changes. Use when the user has customized components.
+- **Skip** → `npx reign-ui@latest init --preset <code> --force --no-reinstall`. Only updates config and CSS variables, leaves existing components as-is.
 
 Always run preset commands inside the user's project directory. The CLI automatically preserves the current base (`base` vs `radix`) from `components.json`. If you must use a scratch/temp directory (e.g. for `--dry-run` comparisons), pass `--base <current-base>` explicitly — preset codes do not encode the base.

@@ -114,13 +114,13 @@ This allows you to:
 Once configured, you can install resources using the namespace syntax:
 
 ```bash
-npx reignlabs-ui@latest add @v0/dashboard
+npx reign-ui@latest add @v0/dashboard
 ```
 
 or multiple resources at once:
 
 ```bash
-npx reignlabs-ui@latest add @acme/header @lib/auth-utils @ai/chatbot-rules
+npx reign-ui@latest add @acme/header @lib/auth-utils @ai/chatbot-rules
 ```
 
 ### Quick Configuration
@@ -139,7 +139,7 @@ Add registries to your `components.json`:
 Then start installing:
 
 ```bash
-npx reignlabs-ui@latest add @acme/button
+npx reign-ui@latest add @acme/button
 ```
 
 ---
@@ -175,7 +175,7 @@ The simplest way to configure a registry is with a URL template string:
 }
 ```
 
-> **Note:** The `{name}` placeholder in the URL is automatically parsed and replaced with the resource name when you run `npx reignlabs-ui@latest add @namespace/resource-name`. For example, `@acme/button` becomes `https://registry.acme.com/resources/button.json`. See [URL Pattern System](#url-pattern-system) for more details.
+> **Note:** The `{name}` placeholder in the URL is automatically parsed and replaced with the resource name when you run `npx reign-ui@latest add @namespace/resource-name`. For example, `@acme/button` becomes `https://registry.acme.com/resources/button.json`. See [URL Pattern System](#url-pattern-system) for more details.
 
 ### Advanced Configuration
 
@@ -441,7 +441,7 @@ Example secure registry setup:
 The CLI provides transparency about what's being installed. You can see the payload of a registry item using the following command:
 
 ```bash
-npx reignlabs-ui@latest view @acme/button
+npx reign-ui@latest view @acme/button
 ```
 
 This will output the payload of the registry item to the console.
@@ -476,7 +476,7 @@ Understanding how dependencies are resolved internally is important if you're de
 
 ### How Resolution Works
 
-When you run `npx reignlabs-ui@latest add @namespace/resource`, the CLI does the following:
+When you run `npx reign-ui@latest add @namespace/resource`, the CLI does the following:
 
 1. **Clears registry context** to start fresh
 2. **Fetches the main resource** from the specified registry
@@ -488,7 +488,7 @@ When you run `npx reignlabs-ui@latest add @namespace/resource`, the CLI does the
 This means that if you run the following command:
 
 ```bash
-npx reignlabs-ui@latest add @acme/auth @custom/login-form
+npx reign-ui@latest add @acme/auth @custom/login-form
 ```
 
 The `login-form.ts` from `@custom/login-form` will override the `login-form.ts` from `@acme/auth` because it's resolved last.
@@ -542,7 +542,7 @@ Let's say you want to customize a button from a vendor registry:
 **3. Install your custom version**:
 
 ```bash
-npx reignlabs-ui@latest add @my-company/custom-button
+npx reign-ui@latest add @my-company/custom-button
 ```
 
 This installs the original button from `@vendor/button` and then overrides the `cssVars` with your own custom values.
@@ -693,16 +693,16 @@ Install resources from any configured registry:
 
 ```bash
 # Install from a specific registry
-npx reignlabs-ui@latest add @v0/dashboard
+npx reign-ui@latest add @v0/dashboard
 
 # Install multiple resources
-npx reignlabs-ui@latest add @acme/button @lib/utils @ai/prompt
+npx reign-ui@latest add @acme/button @lib/utils @ai/prompt
 
 # Install from URL directly
-npx reignlabs-ui@latest add https://registry.example.com/button.json
+npx reign-ui@latest add https://registry.example.com/button.json
 
 # Install from local file
-npx reignlabs-ui@latest add ./local-registry/button.json
+npx reign-ui@latest add ./local-registry/button.json
 ```
 
 ### Viewing Resources
@@ -711,13 +711,13 @@ Inspect registry items before installation:
 
 ```bash
 # View a resource from a registry
-npx reignlabs-ui@latest view @acme/button
+npx reign-ui@latest view @acme/button
 
 # View multiple resources
-npx reignlabs-ui@latest view @v0/dashboard @reignlabs/card
+npx reign-ui@latest view @v0/dashboard @reignlabs/card
 
 # View from URL
-npx reignlabs-ui@latest view https://registry.example.com/button.json
+npx reign-ui@latest view https://registry.example.com/button.json
 ```
 
 The `view` command displays:
@@ -734,19 +734,19 @@ Search for available resources in registries:
 
 ```bash
 # Search a specific registry
-npx reignlabs-ui@latest search @v0
+npx reign-ui@latest search @v0
 
 # Search with query
-npx reignlabs-ui@latest search @acme --query "auth"
+npx reign-ui@latest search @acme --query "auth"
 
 # Search multiple registries
-npx reignlabs-ui@latest search @v0 @acme @lib
+npx reign-ui@latest search @v0 @acme @lib
 
 # Limit results
-npx reignlabs-ui@latest search @v0 --limit 10 --offset 20
+npx reign-ui@latest search @v0 --limit 10 --offset 20
 
 # List all items (alias for search)
-npx reignlabs-ui@latest list @acme
+npx reign-ui@latest list @acme
 ```
 
 Search results include:
@@ -764,7 +764,7 @@ Search results include:
 If you reference a registry that isn't configured:
 
 ```bash
-npx reignlabs-ui@latest add @non-existent/component
+npx reign-ui@latest add @non-existent/component
 ```
 
 Error:

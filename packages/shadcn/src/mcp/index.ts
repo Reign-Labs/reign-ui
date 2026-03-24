@@ -19,7 +19,7 @@ import {
 
 export const server = new Server(
   {
-    name: "reignlabs-ui",
+    name: "reign-ui",
     version: "1.0.0",
   },
   {
@@ -124,7 +124,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       {
         name: "get_add_command_for_items",
         description:
-          "Get the reignlabs-ui CLI add command for specific items in a registry. This is useful for adding one or more components to your project.",
+          "Get the reign-ui CLI add command for specific items in a registry. This is useful for adding one or more components to your project.",
         inputSchema: zodToJsonSchema(
           z.object({
             items: z

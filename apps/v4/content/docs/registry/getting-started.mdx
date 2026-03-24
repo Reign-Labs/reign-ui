@@ -19,7 +19,7 @@ The `registry.json` is the entry point for the registry. It contains the registr
 
 Your registry must have this file (or JSON payload) present at the root of the registry endpoint. The registry endpoint is the URL where your registry is hosted.
 
-The `reignlabs-ui` CLI will automatically generate this file for you when you run the `build` command.
+The `reign-ui` CLI will automatically generate this file for you when you run the `build` command.
 
 ## Add a registry.json file
 
@@ -103,7 +103,7 @@ You can read more about the registry item schema and file types in the [registry
 ### Install the Reign Labs UI CLI
 
 ```bash
-npm install reignlabs-ui@latest
+npm install reign-ui@latest
 ```
 
 ### Add a build script
@@ -113,7 +113,7 @@ Add a `registry:build` script to your `package.json` file.
 ```json title="package.json" showLineNumbers
 {
   "scripts": {
-    "registry:build": "reignlabs-ui build"
+    "registry:build": "reign-ui build"
   }
 }
 ```
@@ -130,7 +130,7 @@ npm run registry:build
   **Note:** By default, the build script will generate the registry JSON files
   in `public/r` e.g `public/r/hello-world.json`.
 
-You can change the output directory by passing the `--output` option. See the [reignlabs-ui build command](/docs/cli#build) for more information.
+You can change the output directory by passing the `--output` option. See the [reign-ui build command](/docs/cli#build) for more information.
 
 </Callout>
 
@@ -162,10 +162,10 @@ Here are some guidelines to follow when building components for a registry.
 
 ## Install using the CLI
 
-To install a registry item using the `reignlabs-ui` CLI, use the `add` command followed by the URL of the registry item.
+To install a registry item using the `reign-ui` CLI, use the `add` command followed by the URL of the registry item.
 
 ```bash
-npx reignlabs-ui@latest add http://localhost:3000/r/hello-world.json
+npx reign-ui@latest add http://localhost:3000/r/hello-world.json
 ```
 
 See the [Namespaced

@@ -438,7 +438,7 @@ describe("formatDryRunResult", () => {
 
     const output = formatDryRunResult(result, ["button"])
 
-    expect(output).toContain("reignlabs-ui add button")
+    expect(output).toContain("reign-ui add button")
     expect(output).toContain("(dry run)")
     expect(output).toContain("Files")
     expect(output).toContain("(1)")

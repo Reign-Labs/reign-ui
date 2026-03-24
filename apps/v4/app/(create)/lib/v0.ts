@@ -4,13 +4,13 @@ import {
   registryItemSchema,
   type configSchema,
   type RegistryItem,
-} from "reignlabs-ui/schema"
+} from "reign-ui/schema"
 import {
   transformFont,
   transformIcons,
   transformMenu,
   transformRender,
-} from "reignlabs-ui/utils"
+} from "reign-ui/utils"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 import { z } from "zod"
 
@@ -227,7 +227,7 @@ function buildGlobalsCss(
 
   const content = dedent`@import "tailwindcss";
 @import "tw-animate-css";
-@import "reignlabs-ui/tailwind.css";
+@import "reign-ui/tailwind.css";
 
   @custom-variant dark (&:is(.dark *));
 
@@ -321,7 +321,7 @@ function buildPackageJson(dependencies: string[]) {
   for (const dep of dependencies) {
     const atIndex = dep.lastIndexOf("@")
     if (atIndex > 0) {
-      // Has version: e.g. "reignlabs-ui@latest".
+      // Has version: e.g. "reign-ui@latest".
       baseDependencies[dep.slice(0, atIndex)] = dep.slice(atIndex + 1)
     } else {
       baseDependencies[dep] = "latest"

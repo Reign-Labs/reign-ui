@@ -1,4 +1,4 @@
-import { type Registry } from "reignlabs-ui/schema"
+import { type Registry } from "reign-ui/schema"
 
 export const blocks: Registry["items"] = [
   {

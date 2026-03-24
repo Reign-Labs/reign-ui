@@ -10,7 +10,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/examples/base/ui/command"
-import { type RegistryItem } from "reignlabs-ui/schema"
+import { type RegistryItem } from "reign-ui/schema"
 
 import { useActionMenu } from "@/app/(create)/hooks/use-action-menu"
 

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { type registryItemFileSchema } from "reignlabs-ui/schema"
+import { type registryItemFileSchema } from "reign-ui/schema"
 import { type z } from "zod"
 
 import { highlightCode } from "@/lib/highlight-code"

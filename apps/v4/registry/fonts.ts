@@ -1,4 +1,4 @@
-import { type RegistryItem } from "reignlabs-ui/schema"
+import { type RegistryItem } from "reign-ui/schema"
 
 import { FONT_DEFINITIONS, type FontDefinition } from "@/lib/font-definitions"
 

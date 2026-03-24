@@ -1,4 +1,4 @@
-import { decodePreset, isPresetCode } from "reignlabs-ui/preset"
+import { decodePreset, isPresetCode } from "reign-ui/preset"
 
 import {
   designSystemConfigSchema,

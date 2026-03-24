@@ -22,10 +22,10 @@ async function waitForCondition(
 export default async function setup() {
   await fs.ensureDir(TEMP_DIR)
 
-  // The v4 dev script runs `pnpm --filter=reignlabs-ui build` in the background
+  // The v4 dev script runs `pnpm --filter=reign-ui build` in the background
   // while `next dev` starts immediately. On fast CI runs the server can be
   // ready before the CLI binary is built, so we wait for it explicitly.
-  await waitForCondition("reignlabs-ui CLI binary", () =>
+  await waitForCondition("reign-ui CLI binary", () =>
     fs.pathExists(REIGNLABS_CLI_PATH)
   )
 

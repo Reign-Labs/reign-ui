@@ -12,7 +12,7 @@ import {
 // Note: The tests here intentionally do not use a mocked registry.
 // We test this against the real registry.
 
-describe("reignlabs-ui add", () => {
+describe("reign-ui add", () => {
   it("should add item to project", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app")
     await npxReignlabs(fixturePath, ["init", "--defaults"])
@@ -370,7 +370,7 @@ describe("reignlabs-ui add", () => {
   })
 })
 
-describe("reignlabs-ui registry add", () => {
+describe("reign-ui registry add", () => {
   it("should add registry from index to components.json", async () => {
     const fixturePath = await createFixtureTestDirectory("next-app")
     await npxReignlabs(fixturePath, ["init", "--defaults"])

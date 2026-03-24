@@ -2,7 +2,7 @@
 
 import { lazy, Suspense } from "react"
 import { SquareIcon } from "lucide-react"
-import type { IconLibraryName } from "reignlabs-ui/icons"
+import type { IconLibraryName } from "reign-ui/icons"
 
 import { useDesignSystemSearchParams } from "@/app/(create)/lib/search-params"
 

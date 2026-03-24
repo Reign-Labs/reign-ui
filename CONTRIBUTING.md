@@ -29,7 +29,7 @@ apps
             ├── example
             └── ui
 packages
-└── shadcn          # The reignlabs-ui CLI package
+└── shadcn          # The reign-ui CLI package
 ```
 
 | Path                 | Description                              |
@@ -38,7 +38,7 @@ packages
 | `apps/v4/components` | The React components for the website.    |
 | `apps/v4/content`    | The content for the website.             |
 | `apps/v4/registry`   | The registry for the components.         |
-| `packages/shadcn`    | The `reignlabs-ui` package.              |
+| `packages/shadcn`    | The `reign-ui` package.              |
 
 ## Development
 
@@ -82,10 +82,10 @@ You can use the `pnpm --filter=[WORKSPACE]` command to start the development pro
 pnpm --filter=v4 dev
 ```
 
-2. To run the `reignlabs-ui` package:
+2. To run the `reign-ui` package:
 
 ```bash
-pnpm --filter=reignlabs-ui dev
+pnpm --filter=reign-ui dev
 ```
 
 ## Running the CLI Locally
@@ -178,7 +178,7 @@ If you have a request for a new component, please open a discussion on GitHub. W
 
 ## CLI
 
-The `reignlabs-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.reign-labs.com/docs/cli).
+The `reign-ui` package is a CLI for adding components to your project. You can find the documentation for the CLI [here](https://ui.reign-labs.com/docs/cli).
 
 Any changes to the CLI should be made in the `packages/shadcn` directory. If you can, it would be great if you could add tests for your changes.
 

@@ -78,7 +78,7 @@ Click the link below to open a Next.js project with RTL support in v0.
 
 ## Supported Styles
 
-Automatic RTL transformation via the CLI is only available for projects created using `reignlabs-ui create` with the new styles (`base-nova`, `radix-nova`, etc.).
+Automatic RTL transformation via the CLI is only available for projects created using `reign-ui create` with the new styles (`base-nova`, `radix-nova`, etc.).
 
 For other styles, see the [Migration Guide](#migrating-existing-components).
 
@@ -125,7 +125,7 @@ If you have existing components installed before enabling RTL, you can migrate t
 <Step>Run the migrate command</Step>
 
 ```bash
-npx reignlabs-ui@latest migrate rtl [path]
+npx reign-ui@latest migrate rtl [path]
 ```
 
 `[path]` accepts a path or glob pattern to migrate. If you don't provide a path, it will migrate all the files in the `ui` directory.
@@ -151,7 +151,7 @@ Some icons like `ArrowRightIcon` or `ChevronLeftIcon` might need the `rtl:rotate
 Add the direction component to your project.
 
 ```bash
-npx reignlabs-ui@latest add direction
+npx reign-ui@latest add direction
 ```
 
 ### Add DirectionProvider

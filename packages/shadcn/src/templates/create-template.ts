@@ -8,7 +8,7 @@ import { execa } from "execa"
 import fs from "fs-extra"
 
 const GITHUB_REPO_URL =
-  process.env.REIGNLABS_GITHUB_URL ?? "https://github.com/reign-labs/reignlabs-ui.git"
+  process.env.REIGNLABS_GITHUB_URL ?? "https://github.com/reign-labs/reign-ui.git"
 
 export interface TemplateOptions {
   projectPath: string

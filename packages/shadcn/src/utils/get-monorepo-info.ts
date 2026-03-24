@@ -109,14 +109,14 @@ export function formatMonorepoMessage(
     )} from a monorepo root.`
   )
   logger.log(
-    `To use reignlabs-ui in a specific workspace, use the ${highlighter.info(
+    `To use reign-ui in a specific workspace, use the ${highlighter.info(
       "-c"
     )} flag:`
   )
   logger.break()
 
   for (const target of targets) {
-    logger.log(`  reignlabs-ui ${command} -c ${target.name}`)
+    logger.log(`  reign-ui ${command} -c ${target.name}`)
   }
 
   logger.break()

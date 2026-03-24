@@ -2,7 +2,7 @@ import { promises as fs } from "fs"
 import path from "path"
 import { ExamplesIndex } from "@/examples/__index__"
 import { LRUCache } from "lru-cache"
-import { registryItemSchema, type registryItemFileSchema } from "reignlabs-ui/schema"
+import { registryItemSchema, type registryItemFileSchema } from "reign-ui/schema"
 import { type z } from "zod"
 
 import { readFileFromRoot } from "@/lib/read-file"

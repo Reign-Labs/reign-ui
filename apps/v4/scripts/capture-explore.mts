@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync } from "fs"
 import path from "path"
 import puppeteer from "puppeteer"
-import { decodePreset } from "reignlabs-ui/preset"
+import { decodePreset } from "reign-ui/preset"
 
 import { EXPLORE_PRESETS } from "../lib/explore"
 

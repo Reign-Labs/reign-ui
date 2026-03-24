@@ -1,6 +1,6 @@
 "use server"
 
-import { registryItemSchema } from "reignlabs-ui/schema"
+import { registryItemSchema } from "reign-ui/schema"
 import { type z } from "zod"
 
 export async function getAllBlockIds(

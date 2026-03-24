@@ -7,7 +7,7 @@ This is a Next.js template with Reign Labs UI.
 To add components to your app, run the following command:
 
 ```bash
-npx reignlabs-ui@latest add button
+npx reign-ui@latest add button
 ```
 
 This will place the ui components in the `components` directory.

@@ -1,4 +1,4 @@
-import { registryItemSchema, type RegistryItem } from "reignlabs-ui/schema"
+import { registryItemSchema, type RegistryItem } from "reign-ui/schema"
 
 import { BASE_COLORS, THEMES } from "@/registry/config"
 

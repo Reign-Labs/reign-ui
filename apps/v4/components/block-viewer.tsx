@@ -20,7 +20,7 @@ import { type PanelImperativeHandle } from "react-resizable-panels"
 import {
   type registryItemFileSchema,
   type registryItemSchema,
-} from "reignlabs-ui/schema"
+} from "reign-ui/schema"
 import { type z } from "zod"
 
 import { trackEvent } from "@/lib/events"
@@ -223,11 +223,11 @@ function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
           className="w-fit gap-1 px-2 shadow-none"
           size="sm"
           onClick={() => {
-            copyToClipboard(`npx reignlabs-ui@latest add ${item.name}`)
+            copyToClipboard(`npx reign-ui@latest add ${item.name}`)
           }}
         >
           {isCopied ? <Check /> : <Terminal />}
-          <span>npx reignlabs-ui add {item.name}</span>
+          <span>npx reign-ui add {item.name}</span>
         </Button>
       </div>
     </div>

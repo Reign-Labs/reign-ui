@@ -3,7 +3,7 @@ import { registryItemSchema, searchResultsSchema } from "@/src/schema"
 import { getPackageRunner } from "@/src/utils/get-package-manager"
 import { z } from "zod"
 
-const REIGNLABS_CLI_COMMAND = "reignlabs-ui@latest"
+const REIGNLABS_CLI_COMMAND = "reign-ui@latest"
 
 export async function npxReignlabs(command: string) {
   const packageRunner = await getPackageRunner(process.cwd())

@@ -89,16 +89,16 @@ export function ProjectForm({
 
     return IS_LOCAL_DEV
       ? {
-          pnpm: `reignlabs-ui init${flags}`,
-          npm: `reignlabs-ui init${flags}`,
-          yarn: `reignlabs-ui init${flags}`,
-          bun: `reignlabs-ui init${flags}`,
+          pnpm: `reign-ui init${flags}`,
+          npm: `reign-ui init${flags}`,
+          yarn: `reign-ui init${flags}`,
+          bun: `reign-ui init${flags}`,
         }
       : {
-          pnpm: `pnpm dlx reignlabs-ui${REIGNLABS_VERSION} init${flags}`,
-          npm: `npx reignlabs-ui${REIGNLABS_VERSION} init${flags}`,
-          yarn: `yarn dlx reignlabs-ui${REIGNLABS_VERSION} init${flags}`,
-          bun: `bunx --bun reignlabs-ui${REIGNLABS_VERSION} init${flags}`,
+          pnpm: `pnpm dlx reign-ui${REIGNLABS_VERSION} init${flags}`,
+          npm: `npx reign-ui${REIGNLABS_VERSION} init${flags}`,
+          yarn: `yarn dlx reign-ui${REIGNLABS_VERSION} init${flags}`,
+          bun: `bunx --bun reign-ui${REIGNLABS_VERSION} init${flags}`,
         }
   }, [framework, isMonorepo, params.base, params.rtl, presetCode])
 

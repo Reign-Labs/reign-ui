@@ -1,4 +1,4 @@
-# reignlabs-ui MCP Server
+# reign-ui MCP Server
 
 The CLI includes an MCP server that lets AI assistants search, browse, view, and install components from registries.
 
@@ -7,8 +7,8 @@ The CLI includes an MCP server that lets AI assistants search, browse, view, and
 ## Setup
 
 ```bash
-reignlabs-ui mcp        # start the MCP server (stdio)
-reignlabs-ui mcp init   # write config for your editor
+reign-ui mcp        # start the MCP server (stdio)
+reign-ui mcp init   # write config for your editor
 ```
 
 Editor config files:
@@ -25,45 +25,45 @@ Editor config files:
 
 ## Tools
 
-> **Tip:** MCP tools handle registry operations (search, view, install). For project configuration (aliases, framework, Tailwind version), use `npx reignlabs-ui@latest info` — there is no MCP equivalent.
+> **Tip:** MCP tools handle registry operations (search, view, install). For project configuration (aliases, framework, Tailwind version), use `npx reign-ui@latest info` — there is no MCP equivalent.
 
-### `reignlabs-ui:get_project_registries`
+### `reign-ui:get_project_registries`
 
 Returns registry names from `components.json`. Errors if no `components.json` exists.
 
 **Input:** none
 
-### `reignlabs-ui:list_items_in_registries`
+### `reign-ui:list_items_in_registries`
 
 Lists all items from one or more registries.
 
 **Input:** `registries` (string[]), `limit` (number, optional), `offset` (number, optional)
 
-### `reignlabs-ui:search_items_in_registries`
+### `reign-ui:search_items_in_registries`
 
 Fuzzy search across registries.
 
 **Input:** `registries` (string[]), `query` (string), `limit` (number, optional), `offset` (number, optional)
 
-### `reignlabs-ui:view_items_in_registries`
+### `reign-ui:view_items_in_registries`
 
 View item details including full file contents.
 
-**Input:** `items` (string[]) — e.g. `["@reignlabs-ui/button", "@reignlabs-ui/card"]`
+**Input:** `items` (string[]) — e.g. `["@reign-ui/button", "@reign-ui/card"]`
 
-### `reignlabs-ui:get_item_examples_from_registries`
+### `reign-ui:get_item_examples_from_registries`
 
 Find usage examples and demos with source code.
 
 **Input:** `registries` (string[]), `query` (string) — e.g. `"accordion-demo"`, `"button example"`
 
-### `reignlabs-ui:get_add_command_for_items`
+### `reign-ui:get_add_command_for_items`
 
 Returns the CLI install command.
 
-**Input:** `items` (string[]) — e.g. `["@reignlabs-ui/button"]`
+**Input:** `items` (string[]) — e.g. `["@reign-ui/button"]`
 
-### `reignlabs-ui:get_audit_checklist`
+### `reign-ui:get_audit_checklist`
 
 Returns a checklist for verifying components (imports, deps, lint, TypeScript).
 
@@ -73,7 +73,7 @@ Returns a checklist for verifying components (imports, deps, lint, TypeScript).
 
 ## Configuring Registries
 
-Registries are set in `components.json`. The `@reignlabs-ui` registry is always built-in.
+Registries are set in `components.json`. The `@reign-ui` registry is always built-in.
 
 ```json
 {

@@ -7,7 +7,7 @@ This is a template for a new Astro project with React, TypeScript, and Reign Lab
 To add components to your app, run the following command:
 
 ```bash
-npx reignlabs-ui@latest add button
+npx reign-ui@latest add button
 ```
 
 This will place the ui components in the `src/components` directory.
