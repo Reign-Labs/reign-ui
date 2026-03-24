@@ -1,50 +1,58 @@
 # reign-ui
 
-A CLI for adding components to your project.
+The foundation of the **Reign Labs ecosystem**. A CLI and component library for adding beautifully designed, accessible components to your projects.
 
-## create
-
-Use the `create` command to create a new project. You will be taken to a website to build your custom design system and choose your framework.
+## Quick Start
 
 ```bash
-npx reign-ui create
+npx reign-ui@latest init --name my-app --preset base-nova
 ```
 
-## init
+## Commands
 
-Use the `init` command to initialize dependencies for a new project.
+### init
 
-The `init` command installs dependencies, adds the `cn` util, configures Tailwind CSS, and CSS variables for the project.
+Initialize a new or existing project with Reign UI components.
 
 ```bash
-npx reign-ui init
+npx reign-ui@latest init
 ```
 
-## add
+### add
 
-Use the `add` command to add components to your project.
-
-The `add` command adds a component to your project and installs all required dependencies.
+Add components to your project. Installs all required dependencies.
 
 ```bash
-npx reign-ui add [component]
+npx reign-ui@latest add button card dialog
 ```
 
-### Example
+### search
+
+Search registries for components.
 
 ```bash
-npx reign-ui add alert-dialog
+npx reign-ui@latest search @reignlabs -q "sidebar"
 ```
 
-You can also run the command without any arguments to view a list of all available components:
+### mcp
+
+Start the MCP server for AI-assisted development.
 
 ```bash
-npx reign-ui add
+npx reign-ui@latest mcp
+```
+
+### docs
+
+Get documentation URLs for components.
+
+```bash
+npx reign-ui@latest docs button dialog select
 ```
 
 ## Documentation
 
-Visit https://ui.reign-labs.com/docs/cli to view the documentation.
+Visit [ui.reign-labs.com/docs](https://ui.reign-labs.com/docs) to view the full documentation.
 
 ## License
 

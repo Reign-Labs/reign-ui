@@ -1,7 +1,7 @@
 {
   "name": "reign-ui",
-  "version": "4.1.0",
-  "description": "Add components to your apps.",
+  "version": "4.1.1",
+  "description": "The foundation of the Reign Labs ecosystem. A modern component library and CLI built with Tailwind CSS v4.",
   "publishConfig": {
     "access": "public"
   },
