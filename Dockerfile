@@ -9,7 +9,7 @@ ENV NODE_OPTIONS="--max-old-space-size=8192"
 ENV NEXT_PUBLIC_APP_URL="https://ui.reign-labs.com"
 COPY . .
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
-RUN pnpm --filter=reignlabs-ui build && cd apps/v4 && npx next build
+RUN pnpm --filter=reign-ui build && cd apps/v4 && npx next build
 
 FROM node:22-slim AS runner
 WORKDIR /app
