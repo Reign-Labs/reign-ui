@@ -15,7 +15,7 @@ vi.mock("../../src/utils/get-config", () => ({
 }))
 
 vi.mock("../../src/registry/api", () => ({
-  getShadcnRegistryIndex: vi.fn(),
+  getReignlabsRegistryIndex: vi.fn(),
 }))
 
 describe("get project info", async () => {
@@ -286,7 +286,7 @@ describe("getFrameworkVersion", () => {
   })
 })
 
-import { getShadcnRegistryIndex } from "../../src/registry/api"
+import { getReignlabsRegistryIndex } from "../../src/registry/api"
 import { getConfig, resolveConfigPaths } from "../../src/utils/get-config"
 
 describe("getProjectComponents", () => {
@@ -333,7 +333,7 @@ describe("getProjectComponents", () => {
     vi.mocked(resolveConfigPaths).mockResolvedValue({
       resolvedPaths: { ui: uiDir },
     } as any)
-    vi.mocked(getShadcnRegistryIndex).mockResolvedValue([
+    vi.mocked(getReignlabsRegistryIndex).mockResolvedValue([
       { name: "button" },
       { name: "card" },
       { name: "dialog" },
@@ -353,7 +353,7 @@ describe("getProjectComponents", () => {
     vi.mocked(resolveConfigPaths).mockResolvedValue({
       resolvedPaths: { ui: uiDir },
     } as any)
-    vi.mocked(getShadcnRegistryIndex).mockResolvedValue([
+    vi.mocked(getReignlabsRegistryIndex).mockResolvedValue([
       { name: "button" },
     ] as any)
 
@@ -374,7 +374,7 @@ describe("getProjectComponents", () => {
     vi.mocked(resolveConfigPaths).mockResolvedValue({
       resolvedPaths: { ui: uiDir },
     } as any)
-    vi.mocked(getShadcnRegistryIndex).mockResolvedValue([
+    vi.mocked(getReignlabsRegistryIndex).mockResolvedValue([
       { name: "button" },
     ] as any)
 
@@ -392,7 +392,7 @@ describe("getProjectComponents", () => {
     vi.mocked(resolveConfigPaths).mockResolvedValue({
       resolvedPaths: { ui: uiDir },
     } as any)
-    vi.mocked(getShadcnRegistryIndex).mockResolvedValue(undefined)
+    vi.mocked(getReignlabsRegistryIndex).mockResolvedValue(undefined)
 
     const result = await getProjectComponents(tmpDir)
 
@@ -407,7 +407,7 @@ describe("getProjectComponents", () => {
     vi.mocked(resolveConfigPaths).mockResolvedValue({
       resolvedPaths: { ui: uiDir },
     } as any)
-    vi.mocked(getShadcnRegistryIndex).mockResolvedValue([
+    vi.mocked(getReignlabsRegistryIndex).mockResolvedValue([
       { name: "button" },
     ] as any)
 
