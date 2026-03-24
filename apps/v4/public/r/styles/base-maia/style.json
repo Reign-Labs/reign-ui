@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "style",
   "dependencies": [
     "class-variance-authority",
@@ -8,7 +8,7 @@
   ],
   "devDependencies": [
     "tw-animate-css",
-    "shadcn"
+    "reign-ui"
   ],
   "registryDependencies": [
     "utils"
@@ -17,7 +17,7 @@
   "cssVars": {},
   "css": {
     "@import \"tw-animate-css\"": {},
-    "@import \"shadcn/tailwind.css\"": {},
+    "@import \"reign-ui/tailwind.css\"": {},
     "@layer base": {
       "*": {
         "@apply border-border outline-ring/50": {}

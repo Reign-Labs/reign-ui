@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "direction",
   "files": [
     {
@@ -10,7 +10,7 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/direction",
+      "docs": "https://ui.reign-labs.com/docs/components/radix/direction",
       "api": "https://www.radix-ui.com/primitives/docs/utilities/direction-provider.md"
     }
   },

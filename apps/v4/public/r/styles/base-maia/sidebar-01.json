@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "sidebar-01",
   "title": "Sidebar 01",
   "description": "A simple sidebar with navigation grouped by section.",

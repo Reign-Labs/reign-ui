@@ -1,17 +1,17 @@
 {
-  "name": "shadcn/ui",
-  "homepage": "https://ui.shadcn.com",
+  "name": "reign-ui/ui",
+  "homepage": "https://ui.reign-labs.com",
   "items": [
     {
       "name": "index",
       "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
-      "devDependencies": ["tw-animate-css", "shadcn"],
+      "devDependencies": ["tw-animate-css", "reign-ui"],
       "registryDependencies": ["utils"],
       "files": [],
       "cssVars": {},
       "css": {
         "@import \"tw-animate-css\"": {},
-        "@import \"shadcn/tailwind.css\"": {},
+        "@import \"reign-ui/tailwind.css\"": {},
         "@layer base": {
           "*": {
             "@apply border-border outline-ring/50": {}
@@ -26,13 +26,13 @@
     {
       "name": "style",
       "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
-      "devDependencies": ["tw-animate-css", "shadcn"],
+      "devDependencies": ["tw-animate-css", "reign-ui"],
       "registryDependencies": ["utils"],
       "files": [],
       "cssVars": {},
       "css": {
         "@import \"tw-animate-css\"": {},
-        "@import \"shadcn/tailwind.css\"": {},
+        "@import \"reign-ui/tailwind.css\"": {},
         "@layer base": {
           "*": {
             "@apply border-border outline-ring/50": {}

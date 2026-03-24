@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "calendar",
   "dependencies": [
     "react-day-picker@latest",
@@ -17,8 +17,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/base/calendar",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/base/examples/calendar-example.tsx",
+      "docs": "https://ui.reign-labs.com/docs/components/base/calendar",
+      "examples": "https://raw.githubusercontent.com/reign-labs/reign-ui/refs/heads/main/apps/v4/registry/bases/base/examples/calendar-example.tsx",
       "api": "https://react-day-picker.js.org"
     }
   },

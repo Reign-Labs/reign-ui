@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "sidebar",
   "registryDependencies": [
     "button",
@@ -19,8 +19,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/sidebar",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"
+      "docs": "https://ui.reign-labs.com/docs/components/radix/sidebar",
+      "examples": "https://raw.githubusercontent.com/reign-labs/reign-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"
     }
   },
   "type": "registry:ui"

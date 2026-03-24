@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "resizable",
   "dependencies": [
     "react-resizable-panels"
@@ -13,8 +13,8 @@
   ],
   "meta": {
     "links": {
-      "docs": "https://ui.shadcn.com/docs/components/radix/resizable",
-      "examples": "https://raw.githubusercontent.com/shadcn-ui/ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
+      "docs": "https://ui.reign-labs.com/docs/components/radix/resizable",
+      "examples": "https://raw.githubusercontent.com/reign-labs/reign-ui/refs/heads/main/apps/v4/registry/bases/radix/examples/resizable-example.tsx",
       "api": "https://github.com/bvaughn/react-resizable-panels"
     }
   },
