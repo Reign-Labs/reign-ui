@@ -1,8 +1,8 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "calendar-10",
   "type": "registry:block",
-  "author": "shadcn (https://ui.shadcn.com)",
+  "author": "Reign Labs (https://ui.reign-labs.com)",
   "description": "Today button",
   "registryDependencies": [
     "calendar",

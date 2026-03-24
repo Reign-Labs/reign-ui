@@ -1,6 +1,6 @@
 {
-  "name": "shadcn/ui",
-  "homepage": "https://ui.shadcn.com",
+  "name": "reign-ui",
+  "homepage": "https://ui.reign-labs.com",
   "items": [
     {
       "name": "index",

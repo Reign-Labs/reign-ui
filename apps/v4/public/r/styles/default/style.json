@@ -1,8 +1,8 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "$schema": "https://ui.reign-labs.com/schema/registry-item.json",
   "name": "style",
   "type": "registry:style",
-  "author": "shadcn (https://ui.shadcn.com)",
+  "author": "Reign Labs (https://ui.reign-labs.com)",
   "dependencies": [
     "tailwindcss-animate",
     "class-variance-authority",
