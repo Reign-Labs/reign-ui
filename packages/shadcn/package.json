@@ -1,6 +1,6 @@
 {
   "name": "reign-ui",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "The foundation of the Reign Labs ecosystem. A modern component library and CLI built with Tailwind CSS v4.",
   "publishConfig": {
     "access": "public"
